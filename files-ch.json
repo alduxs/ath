@@ -1,0 +1,224 @@
+{
+  "files": [{
+    "source": "assets/images/bacckground.png",
+    "type": "IMAGE",
+    "size": 3947.140
+  }, {
+    "source": "assets/images/bacckground2.png",
+    "type": "IMAGE",
+    "size": 3675.666
+  }, {
+    "source": "assets/images/buey.jpg",
+    "type": "IMAGE",
+    "size": 31.252
+  }, {
+    "source": "assets/images/buey01.png",
+    "type": "IMAGE",
+    "size": 53.672
+  }, {
+    "source": "assets/images/ciervo.png",
+    "type": "IMAGE",
+    "size": 32.398
+  }, {
+    "source": "assets/images/ciervo02.png",
+    "type": "IMAGE",
+    "size": 32.669
+  }, {
+    "source": "assets/images/ciervo03.png",
+    "type": "IMAGE",
+    "size": 37.121
+  }, {
+    "source": "assets/images/circulo-char.png",
+    "type": "IMAGE",
+    "size": 3.447
+  },{
+    "source": "assets/images/circulo-contact.png",
+    "type": "IMAGE",
+    "size": 4.485
+  }, {
+    "source": "assets/images/circuloread.png",
+    "type": "IMAGE",
+    "size": 2.637
+  }, {
+    "source": "assets/images/divisor-menu.jpg",
+    "type": "IMAGE",
+    "size": 11.322
+  }, {
+    "source": "assets/images/federico.jpg",
+    "type": "IMAGE",
+    "size": 567.196
+  }, {
+    "source": "assets/images/flecha.png",
+    "type": "IMAGE",
+    "size": 1.040
+  }, {
+    "source": "assets/images/fondo-amakela.jpg",
+    "type": "IMAGE",
+    "size": 276.824
+  }, {
+    "source": "assets/images/fondo-chischaca.jpg",
+    "type": "IMAGE",
+    "size": 330.527
+  }, {
+    "source": "assets/images/fondo-contacto.jpg",
+    "type": "IMAGE",
+    "size": 367.529
+  }, {
+    "source": "assets/images/fondo-contacto1.jpg",
+    "type": "IMAGE",
+    "size": 70.675
+  }, {
+    "source": "assets/images/fondo-contacto2.jpg",
+    "type": "IMAGE",
+    "size": 305.012
+  }, {
+    "source": "assets/images/fondo-green.jpg",
+    "type": "IMAGE",
+    "size": 533.031
+  }, {
+    "source": "assets/images/fondo-seccion-1.jpg",
+    "type": "IMAGE",
+    "size": 314.285
+  },{
+    "source": "assets/images/foto1-sep.jpg",
+    "type": "IMAGE",
+    "size": 135.454
+  },{
+    "source": "assets/images/foto2-sep.jpg",
+    "type": "IMAGE",
+    "size": 114.211
+  }, {
+    "source": "assets/images/foto3-sep.jpg",
+    "type": "IMAGE",
+    "size": 205.652
+  },{
+    "source": "assets/images/huntwus.jpg",
+    "type": "IMAGE",
+    "size": 464.734
+  },{
+    "source": "assets/images/logo.png",
+    "type": "IMAGE",
+    "size": 10.499
+  },{
+    "source": "assets/images/logo-blanco.svg",
+    "type": "IMAGE",
+    "size": 6.044
+  },{
+    "source": "assets/images/logo-footer.svg",
+    "type": "IMAGE",
+    "size": 6.033
+  },{
+    "source": "assets/images/logo-small-green.svg",
+    "type": "IMAGE",
+    "size": 6.033
+  },{
+    "source": "assets/images/logo-small-white.svg",
+    "type": "IMAGE",
+    "size": 5.611
+  },{
+    "source": "assets/images/palomas.jpg",
+    "type": "IMAGE",
+    "size": 8.693
+  },{
+    "source": "assets/images/palomas01.png",
+    "type": "IMAGE",
+    "size": 4.539
+  },{
+    "source": "assets/images/palomas03.png",
+    "type": "IMAGE",
+    "size": 3.884
+  },{
+    "source": "assets/images/palomas04.png",
+    "type": "IMAGE",
+    "size": 3.467
+  },{
+    "source": "assets/images/palomas05.png",
+    "type": "IMAGE",
+    "size": 27.707
+  },{
+    "source": "assets/images/ram.png",
+    "type": "IMAGE",
+    "size": 22.889
+  },{
+    "source": "assets/images/readmoreline.jpg",
+    "type": "IMAGE",
+    "size": 1.130
+  },{
+    "source": "assets/images/textura-blanca.jpg",
+    "type": "IMAGE",
+    "size": 262.817
+  },{
+    "source": "assets/images/textura-blanca.png",
+    "type": "IMAGE",
+    "size": 4245.587
+  },{
+    "source": "assets/images/chischaca/imagen01.jpg",
+    "type": "IMAGE",
+    "size": 205.304
+  },{
+    "source": "assets/images/chischaca/imagen02.jpg",
+    "type": "IMAGE",
+    "size": 57.172
+  },{
+    "source": "assets/images/chischaca/imagen03.jpg",
+    "type": "IMAGE",
+    "size": 70.525
+  },{
+    "source": "assets/images/chischaca/imagen04.jpg",
+    "type": "IMAGE",
+    "size": 103.355
+  },{
+    "source": "assets/images/chischaca/page/chef.jpg",
+    "type": "IMAGE",
+    "size": 142.950
+  },{
+    "source": "assets/images/chischaca/page/lodge01.jpg",
+    "type": "IMAGE",
+    "size": 255.706
+  },{
+    "source": "assets/images/chischaca/page/lodge02.jpg",
+    "type": "IMAGE",
+    "size": 160.942
+  },{
+    "source": "assets/images/chischaca/page/lodge03.jpg",
+    "type": "IMAGE",
+    "size": 233.755
+  },{
+    "source": "assets/images/chischaca/page/lodge04.jpg",
+    "type": "IMAGE",
+    "size": 233.405
+  },{
+    "source": "assets/images/chischaca/page/logo-footer.png",
+    "type": "IMAGE",
+    "size": 4.549
+  },{
+    "source": "assets/images/chischaca/page/mapa01.png",
+    "type": "IMAGE",
+    "size": 135.433
+  },{
+    "source": "assets/images/chischaca/page/mapa01-1.png",
+    "type": "IMAGE",
+    "size": 84.494
+  },{
+    "source": "assets/images/chischaca/page/mapa01-2.png",
+    "type": "IMAGE",
+    "size": 41.687
+  },{
+    "source": "assets/images/chischaca/page/mapa01-resp.png",
+    "type": "IMAGE",
+    "size": 286.359
+  },{
+    "source": "assets/images/chischaca/page/plato.png",
+    "type": "IMAGE",
+    "size": 307.874
+  },{
+    "source": "assets/images/chischaca/page/plato02.png",
+    "type": "IMAGE",
+    "size": 15.607
+  },{
+    "source": "assets/images/chischaca/page/trazo.png",
+    "type": "IMAGE",
+    "size": 4.862
+  }]
+
+}

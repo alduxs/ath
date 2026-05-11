@@ -1,0 +1,19 @@
+
+# Ignora todo lo de la carpeta images, excepto el archivo fotos/.gitingnore
+assets/slides/*
+!assets/slides/.gitignore
+
+assets/video/*
+!assets/video/.gitignore
+
+assets/galerias/*
+!assets/galerias/.gitignore
+
+assets/imgmail/*
+!assets/imgmail/.gitignore
+
+assets/files/*
+!assets/files/.gitignore
+
+assets/fontawesome/*
+!assets/fontawesome/.gitignore

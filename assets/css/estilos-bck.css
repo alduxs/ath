@@ -1,0 +1,1740 @@
+
+
+* {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+  }
+    
+body,html{
+	font-family: 'Red Hat Display', sans-serif;
+	font-weight: 400;
+	font-size: 16px;
+	color: #FFF;
+	position: relative;
+}
+html{
+	height: 100%;
+	width: 100%;
+}
+body,html,p,h1{
+	margin: 0;
+	padding: 0;
+}
+
+.contenedor-total{
+	background-image: url("../images/bacckground2.png");
+	background-color: #5a6b60;
+	background-blend-mode: multiply;
+	overflow: hidden;
+}
+/* Top */
+.top{
+	padding: 10px 0px;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	z-index: 500;
+}
+.top .logo{
+	align-items: center;
+	display: flex;
+	justify-content: start;
+	width: 90px;
+}
+.top .logo a{
+	display:contents ;
+}
+.top .movilg{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.top .menu-hamb{
+	cursor: pointer;
+	padding-top: 2px;
+}
+.top .mail-top{
+	align-items: end;
+	display: none;
+	justify-content: center;
+	flex-flow: column;
+}
+.top .mail-top-resp{
+	align-items: center;
+	display: flex;
+	justify-content: end;
+	flex-flow: row;
+}
+.top .mail-top-resp a,.top .mail-top a{
+	color: #fff;
+	text-decoration: none;
+}
+.top .mail-top-resp i,.top .mail-top i{
+	margin: 0px 6px;
+}
+.top .mail-top .nomovil{
+	display: none;
+}
+.top .mail-top .movil{
+	display: inline-flex;
+}
+/* Fin Top */
+.top2{
+	padding: 10px 0px;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	z-index: 500;
+	background-color: #e9dfd4;
+}
+.top2 .logo{
+	align-items: center;
+	display: flex;
+	justify-content: start;
+	width: 90px;
+}
+.top2 .logo a{
+	display:contents ;
+}
+.top2 .menu-hamb i{
+	color: #5a6c60;
+	line-height: 2rem;
+	cursor: pointer;
+}
+.top2 .movilg{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.top2 .mail-top{
+	align-items: end;
+	justify-content: center;
+	flex-flow: column;
+	display: inline-flex;
+}
+.top2 .mail-top ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.top2 .mail-top ul li{
+	display: inline-flex;
+	margin: 0px 6px;
+}
+.top2 .mail-top ul .mm{
+	margin-right: 15px;
+}
+.top2 .mail-top a{
+	font-size: 0.9rem;
+	color: #5a6c60;
+	font-weight: 600;
+	text-decoration: none;
+}
+.top2 .mail-top a i{
+	font-size: 1.1rem;
+	color: #5a6c60;
+}
+.top2 .mail-top ul .nomovil{
+	display: none;
+}
+.top2 .mail-top ul .movil{
+	display: inline-flex;
+}
+/*
+.top2 .menu-hamb{
+	text-align: center;
+}
+.top2 .menu-hamb i{
+	color: #5a6c60;
+	line-height: 2rem;
+	cursor: pointer;
+}
+
+
+.top .menu-hamb{
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 42px;
+	padding-top: 1px;
+}
+.logo{
+	align-items: center;
+	display: flex;
+	justify-content: start;
+}
+.mail-top{
+	align-items: end;
+	display: flex;
+	justify-content: center;
+	flex-flow: column;
+	margin-top: 0px;
+}
+.mail-topnm{
+	align-items: end;
+	display: flex;
+	justify-content: center;
+	flex-flow: column;
+	margin-top: 0px;
+}
+.mail-topnm i{
+	margin: 0px 6px;
+}
+.mail-topnm a{
+	color: #fff;
+	text-decoration: none;
+}
+.mail-top i{
+	margin: 0px 6px;
+}
+.mail-top a{
+	color: #fff;
+	text-decoration: none;
+}
+
+.movilg{
+	display: block;
+}
+
+
+.top .mail-top .movil{
+	display: inline-flex;
+}*/
+/* Sección 1 */
+.seccion1{
+	width: 100%;
+	height: 100%;
+	position: relative;
+	background-image: url("../images/fondo-seccion-1.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	padding: 130px 0px;
+	display: flex;
+	flex-flow: column;
+}
+.menu-full{
+	margin-top: auto;
+	display: none;
+}
+.menu-full ul{
+	list-style: none;
+	border: 1px solid #fff;
+	padding-inline-start: 0px;
+}
+.menu-full ul li{
+	display: inline-flex;
+	text-align: center;
+	width: calc(100%/4);
+	font-size: 1rem;
+	font-weight: 600;
+	padding: 25px 0px;
+	justify-content: center;
+	background-image: url("../images/divisor-menu.jpg");
+	background-repeat: no-repeat;
+	background-position: right center;
+	cursor: pointer;
+}
+.menu-full ul li:last-child{
+	background-image: none;
+}
+/* Sección 2 */
+.seccion2{
+	width: 100%;
+	min-height: 100%;
+	position: relative;
+	padding: 120px 0px 0px;
+	display: flex;
+	flex-flow: column;
+	background-image: none;
+	background-repeat: no-repeat, no-repeat;
+	background-position: 15% 10%, 97% 10%;
+}
+.seccion2 .bloque1{
+	margin-bottom: 70px;
+	padding: 0px 40px 0px 40px;
+}
+.seccion2 .bloque2{
+	background-image: url("../images/fondo-left.png");
+	background-repeat: repeat-y;
+	background-position: -400% top;
+	padding: 50px 40px 50px 40px;
+}
+.seccion2 .bloque2 p{
+	margin-bottom: 25px;
+}
+.seccion2 .bloque2 h2{
+	margin-bottom: 42px;
+}
+.seccion2 .bloque2 .heigth100{
+	height: 100%;
+	width: 100%;
+}
+.seccion2 .heigth100 .imagenb{
+	height: 300px;
+	width: 100%;
+	background-image: url("../images/federico.jpg");
+	background-repeat: no-repeat;
+	background-position: -150px top;
+	background-size: cover;
+	position: relative;
+	left: 0px;
+	transition: all 3s ease-out;
+}
+
+.seccion2 .heigth100 .imagenb-anim{
+	background-position: -100px top;
+}
+
+/* Sección 3 - Slider */
+.seccion3{
+	width: 100%;
+	height: 100%;
+	position: relative;
+	display: flex;
+	overflow: hidden;
+}
+.seccion3 .bloque1{
+	width: 100%;
+	text-align: center;
+}
+.seccion3 .bloque2{
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 100;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 1.1rem;
+	font-weight: 600;
+	padding: 0px 30px;
+	flex-flow: column;
+}
+/* Sección 4 - LODGES */
+.seccion4{
+	width: 100%;
+	height: 200%;
+	position: relative;
+	display: flex;
+}
+.seccion4 .l1{
+	height: 100%;
+}
+.seccion4 .l2{
+	height: 50%;
+}
+
+/*.seccion4 .imagenchic{
+	height: 100%;
+	width: 100%;
+	background-image: url("../images/fondo-chischaca.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: auto 130%;
+	position: relative;
+	transition: all 2s ease-out;
+}
+.seccion4 .imagenchic-anim{
+	
+	background-size: auto 100%;
+}*/
+
+.seccion4 .imagenchic{
+	height: 100%;
+	width: 100%;
+	background-image: url("../images/fondo-chischaca.jpg");
+	position: relative;
+}
+
+.seccion4 .imagenchic-ph{
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 130% auto;
+	transition: all 3s ease-out;
+}
+.seccion4 .imagenchic-pv{
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: auto 130%;
+	transition: all 3s ease-out;
+}
+
+.seccion4 .imagenchic-ph-anim{
+	background-size: 100% auto;
+}
+.seccion4 .imagenchic-pv-anim{
+	background-size: auto 100%;
+}
+
+.seccion4  .imagenamakela{
+	height: 100%;
+	width: 100%;
+	background-image: url("../images/fondo-amakela.jpg");
+	position: relative;
+}
+
+.seccion4 .imagenamakela-ph{
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 130% auto;
+	transition: all 3s ease-out;
+}
+.seccion4 .imagenamakela-pv{
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: auto 130%;
+	transition: all 3s ease-out;
+}
+
+.seccion4 .imagenamakela-ph-anim{
+	background-size: 100% auto;
+}
+.seccion4 .imagenamakela-pv-anim{
+	background-size: auto 100%;
+}
+
+
+
+.seccion4 .imagenchic .texto, .seccion4  .imagenamakela .texto{
+	text-align: center;
+	position: absolute;
+	top: 50%;
+	left: 0;
+	width: 100%;
+	text-shadow: 1px 0px 17px rgba(0,0,0,0.75);
+}
+.seccion4 .imagenchic .lineas, .seccion4  .imagenamakela .lineas{
+	
+	background-image: url("../images/linea-blanca-vertucal.jpg");
+	background-repeat: no-repeat;
+	background-position: center bottom;
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	width: 2px;
+	height: 30%;
+	margin-left: -1px;
+}
+.seccion4 .imagenchic .texto h2,.seccion4 .imagenamakela .texto h2{
+	font-size: 1.1rem;
+	text-transform: uppercase;
+	font-weight: 800;
+}
+.seccion4 .imagenchic .texto h1,.seccion4 .imagenamakela .texto h1{
+	font-size: 1.875rem;
+	text-transform: uppercase;
+	font-weight: 700;
+}
+
+/* Sección 5 - CHISCHACA AMAKELA */
+.seccion5{
+	width: 100%;
+	min-height: 100%;
+	position: relative;
+	display: flex;
+	flex-flow: column;
+	overflow: hidden;
+}
+.background-chischaca{
+	background-color: #384f40;
+	background-image: url("../images/bacckground.png");
+	background-blend-mode: multiply;
+}
+.contenedor-ciervo{
+	background-image: url("../images/ciervo.png");
+	background-repeat: no-repeat;
+	background-position: 100px 350px;
+}
+.fondo-left-amakela{
+	background-image: url("../images/fondo-left-amakela.png");
+	background-blend-mode: multiply;
+	background-repeat: repeat-y;
+	background-position: 2500% top;
+}
+.seccion5 .info{
+	padding: 50px 0px 100px 0px;
+}
+.seccion5 .infomod{
+	padding: 50px 20px 100px 20px;
+}
+.animales{
+	background-image: url("../images/ciervo02.png"),url("../images/palomas02.png");
+	background-repeat: no-repeat, no-repeat;
+	background-position: -305% 5%, 70% 5%;
+}
+.seccion5 .info .titulo{
+	padding: 35px 35px 5px;
+	background-image: url("../images/fondo-titulo-lodge2.png");
+	background-repeat: repeat-y;
+	background-position: left;
+	margin-bottom: 50px;
+	
+}
+.seccion5 .info .titulo2{
+	padding: 35px 35px 5px;
+	
+	margin-bottom: 50px;
+	
+}
+.seccion5 .info .texto{
+	padding: 0px 35px;
+}
+.seccion5 .info .texto p{
+	padding: 15px 0px;
+	border-bottom: 2px solid rgba(255,255,255,0.1);
+	font-size: 1.1rem;
+	font-weight: 700;
+}
+.seccion5 .info .texto p:last-child{
+	padding: 15px 0px;
+	border-bottom: 2px solid rgba(255,255,255,0);
+}
+.seccion5 .info .texto p .small{
+	
+	font-size: 0.97rem;
+	font-weight: 400;
+}
+.seccion5 .info h1{
+	font-size: 1.8rem;
+	font-weight: 700;
+	text-align: left;
+}
+.seccion5 .info h2{
+	font-size: 1rem;
+	font-weight: 700;
+	text-align: left;
+}
+.redmore{
+	
+	text-align: right;
+	margin-left: 35px;
+}
+.redmore .linea{
+	background-image: url("../images/readmoreline.jpg");
+	background-repeat: repeat-x;
+	background-position: left 75%;
+	height: 35px;
+	width: 40%;
+	float: left;
+}
+.redmore .link{
+	width: 25%;
+	float: left;
+  
+}
+.redmore a{
+	background-image: url("../images/circuloread.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	color: #fff;
+	font-weight: 700;
+	font-size: 0.9rem;
+	text-transform: uppercase;
+	width: 112px;
+	display: inline-block;
+	height: 45px;
+	padding: 12px 10px 10px;
+	text-decoration: none;
+	
+}
+
+.seccion5 .lodge-chis{
+	height: 400px;
+	width: 100%;
+	background-image: url('../../assets/images/chischaca/imagen01.jpg');
+	background-repeat:no-repeat;
+	background-position: center;
+}
+.seccion5 .lodge-chis-ph{
+	
+	background-size: 130% auto;
+	transition: all 3s ease-out;
+}
+.seccion5 .lodge-chis-pv{
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: auto 130%;
+	transition: all 3s ease-out;
+}
+.seccion5 .lodge-chis-ph-anim{
+	background-size: 100% auto;
+}
+.seccion5 .lodge-chis-pv-anim{
+	background-size: auto 100%;
+}
+
+.seccion5 .lodge-amak{
+	height: 400px;
+	width: 100%;
+	background-image: url('../../assets/images/amakela/imag01.jpg');
+	background-repeat:no-repeat;
+	background-position: center;
+}
+.seccion5 .lodge-amak-ph{
+	
+	background-size: 130% auto;
+	transition: all 3s ease-out;
+}
+.seccion5 .lodge-amak-pv{
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: auto 130%;
+	transition: all 3s ease-out;
+}
+.seccion5 .lodge-amak-ph-anim{
+	background-size: 100% auto;
+}
+.seccion5 .lodge-amak-pv-anim{
+	background-size: auto 100%;
+}
+
+.seccion5 .imagen-dec{
+	/*height: 350px;*/
+	background-repeat:no-repeat;
+	background-position: 0px bottom;
+	transition: all 2s ease-out;
+    background-size: 103.75% auto;
+}
+.seccion5 .imagen-dec-anim{
+	background-position: -25px bottom;
+}
+
+.seccion5 .imagen-dec2{
+	height: 350px;
+	background-repeat:no-repeat;
+	background-position: 0px bottom;
+	transition: all 2s ease-out;
+}
+.seccion5 .imagen-dec2-anim{
+	background-position: -250px bottom;
+}
+.seccion9 .imagen-dec3{
+	height: 400px;
+	background-repeat:no-repeat;
+	background-position: -150px bottom;
+	transition: all 2s ease-out;
+}
+.seccion9 .imagen-dec3-anim{
+	background-position: -75px bottom;
+}
+
+/* Sección 6 - HUNY WHITH US */
+.seccion6{
+	width: 100%;
+	min-height: 100%;
+	height: auto;
+	position: relative;
+	display: flex;
+	background-image: url("../images/huntwus.jpg");
+	background-repeat: no-repeat;
+	padding: 120px 30px;
+	text-align: center;
+	overflow: hidden;
+}
+
+.seccion6-pv{
+	background-size: auto 100%; 
+	background-position: center top;
+	transition: all 3s ease-out;
+	
+}
+.seccion6-ph{
+	background-size: 100% auto; 
+	background-position: center top;
+	transition: all 3s ease-out;
+}
+
+.seccion6-pv-anim{
+	background-size: auto 110%; 
+}
+.seccion6-ph-anim{
+	background-size: 110% auto;
+}
+
+.seccion6 h1{
+	font-size: 1.47rem;
+	font-weight: 700;
+	margin-bottom: 70px;
+}
+.seccion6 p{
+	font-size: 1rem;
+	margin-bottom: 25px;
+}
+/* Sección 7 - HUNT INFORMATION*/
+.seccion7{
+	width: 100%;
+	min-height: 100%;
+	position: relative;
+	display: flex;
+	background-image: url("../images/textura-blanca.png");
+	background-repeat: repeat-y;
+	background-position: center;
+	background-color: #FFF;
+	padding: 0px 30px;
+	overflow: hidden;
+}
+.seccion7 .bloque{
+	width: 100%;
+	position: relative;
+	display: flex;
+	background-image: url("../images/huntinfo.jpg"), url("../images/palomas03.png");
+	background-repeat: no-repeat,no-repeat;
+	background-position: 550px top,20% 10%;
+	background-size: cover,auto;
+	padding: 120px 0px;
+	color: #596a5f;
+}
+
+.seccion7 .bloque2{
+	margin-bottom: 60px;
+	padding-right: 30px;
+}
+.seccion7 .bloque h1{
+	font-weight: 600;
+	font-size: 1.1rem;
+	text-align: center;
+	margin-bottom: 90px;
+}
+.seccion7 .bloque h2{
+	font-weight: 700;
+	font-size: 1rem;
+	margin-bottom: 23px;
+}
+.seccion7 .bloque h3{
+	font-size: 0.9rem;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+.seccion7 .bloque h4{
+	font-size: 1.1rem;
+	font-weight: 700;
+	text-transform: uppercase;
+	margin-bottom: 25px;
+}
+
+.seccion7 .rates{
+	padding: 60px 14px;
+	background-image: url("../images/fondo-rates.png"),url("../images/palomas04.png");
+	background-repeat: no-repeat,no-repeat;
+	background-position: left top,right top;
+	background-size: contain,90%;
+	color: #ee7d41;
+	font-weight: 700;
+}
+.seccion7 .rates a{
+	text-decoration: none;
+	color: #ee7d41;
+	height: 45px;
+	width: 251px;
+	font-weight: 700;
+	background-image: url("../images/circulo-contact.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	display: inline-block;
+	text-align: center;
+	background-size: contain;
+	padding: 5px;
+	margin-left: -34px;
+}
+
+/* Sección 8 - CHARITI PROGRAM*/
+.seccion8{
+	width: 100%;
+	position: relative;
+	display: flex;
+	background-image: url("../images/textura-blanca.png"),url("../images/palomas05.png");
+	background-repeat: repeat-y,no-repeat;
+	background-position: center,center top;
+	background-color: #fbf9f6;
+	padding: 140px 0px;
+	overflow: hidden;
+}
+.seccion8 h1{
+	color: #f17c41;
+	font-weight: 700;
+	font-size: 1.1rem;
+	text-transform: uppercase;
+	position: absolute;
+	top: -25px;
+	left: 50%;
+	background-color: #fbf9f6;
+	padding: 10 15px;
+	margin-bottom: 0px;
+	margin-left: -103px;
+	background-image: url("../images/textura-blanca.png");
+	background-repeat: repeat-y;
+	background-position: center;
+}
+.seccion8 .contendor{
+	position: relative;
+	border: 2px solid #f17c41;
+	padding: 30px 28px;
+	color: #596a5f;
+	font-size: 0.9rem;
+	font-weight: 600;
+	margin-bottom: 50px;
+}
+.seccion8 .contendor h2{
+	margin-bottom: 30px;
+	font-weight: 700;
+	font-size: 0.9rem;
+}
+.seccion8 .contendor .bloque{
+	margin-bottom: 27px;
+}
+.seccion8 .contendor .bloque a{
+	color: #596a5f;
+	background-image: url(../images/circulo-char.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	padding: 32px;
+text-decoration: none;
+}
+.seccion8 .contendor .bloque-orange{
+	color: #f17c41;
+	font-weight: 700;
+	padding: 20px;
+	background-color: #faece4;
+	margin-bottom: 27px;
+}
+.seccion8 .ram{
+	
+	position: absolute;
+	bottom: -40px;
+	left: 30%;
+	background-color: #fbf9f6;
+	padding: 10 15px;
+	display: none;
+	margin-left: -155px;
+	background-image: url("../images/textura-blanca.png");
+	background-repeat: repeat-y;
+	background-position: center;
+}
+.seccion8 .pie{
+	font-size: 0.65rem;
+	color: #596a5f;
+	padding: 0px 30px;
+	text-align: justify;
+}
+.seccion8 .pie h3{
+	font-size: 0.65rem;
+	color: #596a5f;
+	font-weight: 700;
+}
+/* Sección 9 - Fotos*/
+.seccion9{
+	width: 100%;
+	position: relative;
+	display: flex;
+	overflow: hidden;
+}
+.imageanimacion1,.imageanimacion2,.imageanimacion3{
+	position: relative;
+	left: -200px;
+	opacity: 0;
+}
+/* Sección 10 - Contacto*/
+/*.seccion10{
+	width: 100%;
+	position: relative;
+	display: flex;
+	padding: 60px 0px;
+	background-image: url("../images/fondo-contacto1.jpg"),url("../images/fondo-contacto2.jpg");
+	background-repeat: no-repeat;
+	background-position: left top,right top;
+	background-size: 50% 100%,50%100%;
+}*/
+.seccion10{
+	width: 100%;
+	position: relative;
+	display: flex;
+	flex-flow: column;
+	overflow: hidden;
+}
+.seccion10 .halfbloque1{
+	width: 100%;
+	padding: 60px 30px;
+	background-image: url("../images/fondo-contacto1.jpg");
+	background-repeat: no-repeat;
+	background-position: left top;
+	background-size: cover;
+}
+.seccion10 .halfbloque1 p,.seccion10 .halfbloque1 ul{
+	font-weight: 400;
+}
+.seccion10 .halfbloque2{
+	width: 100%;
+	padding: 60px 0px;
+	background-image: url("../images/fondo-contacto2.jpg");
+	background-repeat: no-repeat;
+	background-position: left top;
+	background-size: 120% auto;
+	height: 300px;
+	opacity: 0;
+	transition: all 2s ease-out;
+}
+.seccion10 .halfbloque2-bk{
+	background-size:  100% auto;
+	opacity: 1;
+}
+.seccion10 h1{
+	color: #fefefe;
+	text-align: left;
+	font-size: 1.8rem;
+	font-weight: 700;
+	margin-bottom: 78px;
+}
+.seccion10 h2{
+	color: #fff;
+	font-size: 1.1rem;
+	font-weight: 700;
+	margin-bottom: 26px;
+}
+.seccion10 .logo-footer{
+	padding: 15px 0px;
+	margin-top: 30px;
+}
+.seccion10 .bloque-contacto{
+	padding: 15px 0px;
+}
+.seccion10 .border-contacto{
+	border-bottom: 2px solid rgba(255,255,255,0.1);
+}
+.seccion10 .border-contacto{
+	border-bottom: 2px solid rgba(255,255,255,0.1);
+}
+.seccion10 .bloque-contacto .info{
+	font-size: 0.9rem;
+}
+.seccion10 .bloque-contacto .info .nombre{
+	font-size: 1.1rem;
+	font-weight: 700;
+}
+.seccion10 .bloque-contacto .info a{
+	color: #fff;
+	text-decoration: none;
+	margin-top: 18px;
+	display: inline-block;
+}
+.redes-footer{
+	margin-top: 60px;
+	text-align: center;
+	display: block;
+}
+.redes-footer a{
+	color: #fff;
+	text-decoration: none;
+	margin-top: 3px;
+	display: inline-block;
+}
+.redes-footer a i{
+	margin: 0px 10px;
+}
+.redes-footer .redes{
+	float: none;
+	margin-top: 15px;
+	text-align: center;
+	display: none;
+}
+.redes-footer .redes2{
+	float: none;
+	margin-top: 15px;
+	text-align: center;
+	display: block;
+	margin-bottom: 15px;
+}
+.redes-footer .redes a{
+	display: inline-block;
+	height: 32px;
+	margin-top: 0px;
+}
+/* Generales */
+h1{
+	font-size: 1.12rem;
+	font-weight: 600;
+	margin-bottom: 40px;
+	text-align: center;
+}
+h2{
+	font-size: 1.875rem;
+	font-weight: 700;
+	
+}
+.item{
+	width: 100%;
+	height: 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.owl-carousel {
+    
+    height: 100%;
+}
+.owl-carousel .owl-stage-outer {
+    
+    height: 100%;
+}
+.owl-carousel .owl-stage {
+   
+    height: 100%;
+}
+.owl-carousel.owl-drag .owl-item {
+    
+    height: 100%;
+}
+
+.navegador-slide{
+	margin-top: auto;
+	margin-bottom: 50px;
+}
+.navegador-slide ul{
+	margin: 0;
+	text-align: center;
+}
+.navegador-slide ul li{
+	display: inline-block;
+	width: 24px;
+	height: 24px;
+	border: 1px solid transparent;
+	border-radius: 40px 40px 40px 40px;
+	-moz-border-radius: 40px 40px 40px 40px;
+	-webkit-border-radius: 40px 40px 40px 40px;
+	margin: 0px 8px;
+	cursor: pointer;
+}
+.navegador-slide ul li:hover{
+	
+	border: 1px solid #FFF;
+	
+}
+.navegador-slide ul .nn-item{
+	width: 12px;
+	background-color: #fff;
+	clip-path: circle(50% at 50% 50%);
+	height: 12px;
+	margin: 5px;
+}
+.navegador-slide ul .nn-item-activo{
+	background-color: #fff;
+	border: 1px solid #FFF;
+}
+.navegador-slide ul .nn-item:hover{
+	background-color: #fff;
+}
+.seccion11{
+	color: #fff;
+	background-color: #fff;
+	text-align: center;
+	font-weight: 600;
+	padding: 32px 0px;
+}
+/* MENU */
+.menu{
+	background-color: rgba(232,223,212,0.9);
+	color: #384f40;
+	font-weight: 600;
+	text-align: center;
+	text-transform: uppercase;
+	position: fixed;
+	top:55px;
+	left: 50%;
+	width: auto;
+	z-index: 2000;
+	margin-left: -127px;
+	display: block;
+	opacity: 0;
+	font-size: 0.9rem;
+}
+.menu ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.menu ul li{
+	padding: 10px 40px;
+	border-bottom: 2px solid #384f40;
+	cursor: pointer;
+}
+.menu ul li:last-child{
+	border-bottom: 0px solid #384f40;
+}
+.clic1{
+	display: none;
+}
+.clic2{
+	display: block;
+}
+/*.logo-small-gren{
+	max-width: 112px;
+}*/
+.logo-footer-vec{
+	max-width: 255px;
+}
+/*.logo-blanco{
+	width: 90px;
+}*/
+@media (min-width: 480px) {
+	/*.logo-blanco{
+		width: 130px;
+	}*/
+	.top .logo{
+		width: 130px;
+	}
+	.top2 .logo{
+		width: 112px;
+	}
+	.seccion2 .bloque2{
+		padding: 50px 70px 50px 70px;
+		background-position: -50% top;
+	}
+	.seccion2 .heigth100 .imagenb{
+		background-position: -40px top;
+		transition: all 3s ease-out;
+	}
+	.seccion2 .heigth100 .imagenb-anim{
+		background-position: 0px top;
+	}
+	.seccion3 .bloque2{
+		
+		padding: 0px 50px;
+	}
+	.seccion4 .imagenchic .texto, .seccion4  .imagenamakela .texto{
+		top: 45%;
+	}
+
+	.seccion5 .lodge-chis{
+		height: 400px;
+		width: 100%;
+	}
+	.seccion5 .lodge-amak{
+		height: 400px;
+		width: 100%;
+	}
+	.seccion5 .info{
+		padding: 70px 80px 90px 40px
+	}
+	.seccion5 .infomod{
+		padding: 70px 80px 90px 40px
+	}
+	/*.seccion5 .imagen-dec{
+		background-position: -50px bottom;
+	}
+	.seccion5 .imagen-dec-anim{
+		background-position: -200px bottom;
+	}*/
+	.seccion5 .imagen-dec2{
+		background-position: -50px bottom;
+	}
+	.seccion5 .imagen-dec2-anim{
+		background-position: -200px bottom;
+	}
+	.contenedor-ciervo{
+		background-position: 380px 400px;
+	}
+	.seccion6{
+		min-height: 100%;
+		height: auto;
+		padding: 120px 50px;
+		overflow: hidden;
+	}
+	.seccion7 .bloque{
+		width: 100%;
+		background-position: 550px top,20% 10%;
+		background-size: cover,auto;
+	}
+	.seccion8 h1{
+		font-size: 1.8rem;
+		top: -30px;
+		margin-left: -155px;
+	}
+	.seccion8 .contendor{
+		padding: 40px 38px;
+	}
+	.seccion10 .logo-footer{
+		padding: 15px 0px;
+	}
+	.seccion10 .bloque-contacto{
+		padding: 15px 89px;
+	}
+	.redmore .linea{
+		width: 70%;
+	}
+	.seccion7 .rates{
+		padding: 60px 44px;
+	}
+	.redes-footer{
+		margin-top: 60px;
+		text-align: start;
+	}
+	.redes-footer .redes{
+		float: right;
+		margin-top: 0px;
+		text-align: center;
+		display: block;
+	}
+	.redes-footer .redes2{
+		float: right;
+		margin-top: 0px;
+		text-align: center;
+		display: none;
+	}
+	.seccion7{
+		padding: 0px 50px;
+	}
+	.seccion8 .pie{
+		padding: 0px 40px;
+	}
+	.animales{
+		background-image: url("../images/ciervo02.png"),url("../images/palomas02.png");
+		background-repeat: no-repeat, no-repeat;
+		background-position: -105% 5%, 90% 2%;
+	}
+	.fondo-left-amakela{
+		background-position: -110% top;
+	}
+	.seccion7 .rates{
+
+		background-size: contain,60%;
+		
+	}
+
+	.seccion9 .imagen-dec3{
+		height: 400px;
+		background-position: -25px bottom;
+	}
+	.seccion9 .imagen-dec3-anim{
+		background-position: 0px bottom;
+	}
+}
+@media (min-width: 576px) {
+	/*.logo{
+		align-items: center;
+		display: flex;
+		justify-content: start;
+	}*/
+	.mail-top{
+		align-items: end;
+		display: flex;
+		justify-content: center;
+		flex-flow: column;
+		margin-top: 0px;
+	}
+	.seccion2 .bloque2{
+		padding: 50px 100px 50px 100px;
+		background-position: -30% top;
+	}
+	.seccion2 .heigth100 .imagenb{
+		background-position: -40px top;
+		transition: all 3s ease-out;
+	}
+	.seccion2 .heigth100 .imagenb-anim{
+		background-position: 0px top;
+	}
+	.seccion4 .imagenchic .texto, .seccion4  .imagenamakela .texto{
+		top: 60%;
+	}
+	.seccion5 .lodge-chis{
+		height: 400px;
+		width: 100%;
+	}
+	.seccion5 .lodge-amak{
+		height: 400px;
+		width: 100%;
+	}
+	.seccion5 .info{
+		padding: 70px 100px 90px 40px
+	}
+	.seccion5 .infomod{
+		padding: 70px 100px 90px 40px
+	}
+	/*.seccion5 .imagen-dec{
+		background-position: -50px bottom;
+	}
+	.seccion5 .imagen-dec-anim{
+		background-position: -80px bottom;
+	}*/
+	.seccion5 .imagen-dec2{
+		background-position: -50px bottom;
+	}
+	.seccion5 .imagen-dec2-anim{
+		background-position: -80px bottom;
+	}
+	.contenedor-ciervo{
+		background-position: 380px 400px;
+	}
+	.seccion6{
+		min-height: auto;
+		height: 100%;
+		padding: 120px 50px;
+	}
+	.seccion7 .bloque{
+		width: 100%;
+		background-position: 550px top,20% 10%;
+		background-size: cover,auto;
+	}
+	.seccion8 .contendor{
+		padding: 40px 38px;
+	}
+	.seccion8 .pie{
+		padding: 0px 35px;
+	}
+	.animales{
+		background-image: url("../images/ciervo02.png"),url("../images/palomas02.png");
+		background-repeat: no-repeat, no-repeat;
+		background-position: -155% 5%, 90% 5%;
+	}
+	.fondo-left-amakela{
+		background-position: -55% top;
+	}
+	.seccion10 .halfbloque2{
+		height: 500px;
+	}
+	
+	.seccion9 .imagen-dec3{
+		height: 600px;
+		background-position: -25px bottom;
+	}
+	.seccion9 .imagen-dec3-anim{
+		background-position: 0px bottom;
+	}
+	
+	
+}
+@media (min-width: 768px) {
+	.top{
+		padding: 55px 0px;
+	}
+	.top .logo{
+		width: 200px;
+	}
+
+	.top .mail-top{
+		display: flex;
+	}
+	.top .mail-top-resp{
+		display: none;
+	}
+	.top .movilg{
+		display: none;
+		align-items: center;
+		justify-content: center;
+	}
+	.top .mail-top .nomovil{
+		display: block;
+	}
+	.top .mail-top .movil{
+		display: none;
+	}
+	.top2 .mail-top ul .nomovil{
+		display: inline-flex;
+	}
+	.top2 .mail-top ul .movil{
+		display: none;
+	}
+	.seccion1{
+		padding: 60px 0px;
+	}
+	.seccion2 .heigth100 .imagenb{
+		height: 400px;
+		width: 100%;
+	}
+	.menu-full{
+		margin-top: auto;
+		display: block;
+	}
+	.menu-full ul li{
+		font-size: 0.8rem;
+	}
+	.seccion2{
+		
+		background-image: url("../images/palomas01.png"),url("../images/buey01.png");
+		background-repeat: no-repeat, no-repeat;
+		background-position: 10% 70%, 97% 10%;
+		overflow: hidden;
+	}
+	
+	.seccion2 .bloque2{
+		padding: 100px 150px 100px 150px;
+		background-position: left top;
+	}
+	.seccion3 .bloque2{
+		
+		padding: 0px 0px;
+	}
+	.seccion2 .bloque2 h2{
+		margin-bottom: 60px;
+	}
+	.seccion2 .heigth100 .imagenb{
+		background-position: -80px top;
+		transition: all 3s ease-out;
+	}
+	.seccion2 .heigth100 .imagenb-anim{
+		background-position: -0px top;
+	}
+	.seccion4{
+		width: 100%;
+		height: 100%;
+		position: relative;
+		display: flex;
+		overflow: hidden;
+	}
+	.seccion4 .l1{
+		height: 100%;
+	}
+	.seccion4 .l2{
+		height: 100%;
+	}
+	.seccion4 .imagenchic .texto, .seccion4  .imagenamakela .texto{
+		top: 58%;
+	}
+	.seccion5 .lodge-chis{
+		height: 400px;
+		width: 100%;
+	
+	}
+	.seccion5 .lodge-amak{
+		height: 400px;
+		width: 100%;
+	}
+	.seccion5 .info{
+		padding: 70px 150px 90px 40px
+	}
+	.seccion5 .infomod{
+		padding: 70px 150px 90px 40px
+	}
+	/*.seccion5 .imagen-dec{
+		background-position: -50px bottom;
+	}
+	.seccion5 .imagen-dec-anim{
+		background-position: -220px bottom;
+	}*/
+	.seccion5 .imagen-dec2{
+		background-position: -50px bottom;
+	}
+	.seccion5 .imagen-dec2-anim{
+		background-position: -220px bottom;
+	}
+	.contenedor-ciervo{
+		background-position: 500px 400px;
+	}
+	.seccion7{
+		padding: 0px 0px;
+	}
+	.seccion7 .bloque{
+		width: 100%;
+		background-position: 1600% top,20% 10%;
+		background-size: contain,auto;
+	}
+	.seccion8 .contendor{
+		padding: 52px 98px;
+	}
+	
+	/*.top2 .mail-top ul .nomovil{
+		display: inline-flex;
+	}
+	.top2 .mail-top ul  .movil{
+		display: none;
+	}
+	.top .mail-top .nomovil{
+		display: inline-flex;
+	}
+	.top .mail-top .movil{
+		display: none;
+	}
+	.movilg{
+		display: none;
+	}*/
+	.navegador-slide ul li{
+		width: 30px;
+		height: 30px;
+		margin: 0px 15px;
+	}
+
+	.navegador-slide ul .nn-item{
+		width: 18px;
+		height: 18px;
+		margin: 5px;
+	}
+	.seccion6{
+		min-height: auto;
+		height: 100%;
+		padding: 120px 0px;
+	}
+	.seccion8 .pie{
+		padding: 0px 0px;
+	}
+	.animales{
+		background-image: url("../images/ciervo02.png"),url("../images/palomas02.png");
+		background-repeat: no-repeat, no-repeat;
+		background-position: 5% 5%, 40% 5%;
+	}
+	.fondo-left-amakela{
+		background-position: left top;
+	}
+	.seccion6 h1{
+		font-size: 1.87rem;
+	}
+	.seccion7 .rates{
+		background-position: left top,right center;
+		background-size: contain,auto;
+	}
+	.seccion10 .halfbloque2{
+		height: 600px;
+	}
+	.seccion2 .bloque1{
+		padding: 0px 0px 0px 0px;
+	}
+
+	.seccion9 .imagen-dec3{
+		height: 790px;
+		background-position: -150px bottom;
+	}
+	.seccion9 .imagen-dec3-anim{
+		background-position: -50px bottom;
+	}
+	/*.logo-blanco{
+		width: 250px;
+	}
+	.top .menu-hamb{
+		height: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 42px;
+		padding-top: 1px;
+	}*/
+}
+
+@media (min-width: 992px) {
+	.top .logo{
+		width: 250px;
+	}
+
+	.seccion2{
+		background-position: 15% 10%, 97% 10%;
+	}
+	
+	.seccion2 .heigth100 .imagenb{
+		height: 100%;
+		width: 100%;
+	}
+	.seccion2 .bloque2{
+		padding: 50px 80px 50px 80px
+	}
+
+	.seccion2 .heigth100 .imagenb{
+		background-position: -480px top;
+		transition: all 3s ease-out;
+	}
+	.seccion2 .heigth100 .imagenb-anim{
+		background-position: -410px top;
+	}
+	.seccion4 .imagenchic .texto, .seccion4  .imagenamakela .texto{
+		top: 58%;
+	}
+	.seccion5 .info{
+		padding: 70px 40px 90px 40px
+	}
+	.seccion5 .infomod{
+		padding: 70px 40px 90px 40px
+	}
+	.seccion7 .bloque{
+		width: 100%;
+		background-position: 210% top,20% 10%;
+	}
+	.menu-full ul li{
+		font-size: 1rem;
+	}
+	
+	.seccion5 .lodge-chis{
+		height: 100%;
+		width: 100%;
+	
+	}
+	.seccion5 .lodge-amak{
+		height: 100%;
+		width: 100%;
+	}
+
+	/*.seccion5 .imagen-dec{
+		background-position: -50px bottom;
+	}
+	.seccion5 .imagen-dec-anim{
+		background-position: -220px bottom;
+	}*/
+	.seccion5 .imagen-dec2{
+		background-position: -50px bottom;
+	}
+	.seccion5 .imagen-dec2-anim{
+		background-position: -220px bottom;
+	}
+	.seccion8 .ram{
+		display:block;
+	}
+	.seccion10{
+		
+		flex-flow: row;
+	}
+	.seccion10 .halfbloque1{
+		width: 50%;
+		padding: 60px 50px 60px 0px;
+	}
+	.seccion10 .halfbloque2{
+		width: 50%;
+		background-position: 15% top;
+		background-size: auto 120%;
+		height: auto;
+	}
+	
+	.seccion10 .halfbloque2-bk{
+		background-size: auto 100%;
+	}
+
+	.seccion9 .imagen-dec3{
+		height: 790px;
+		background-position: -150px bottom;
+	}
+	.seccion9 .imagen-dec3-anim{
+		background-position: -50px bottom;
+	}
+	
+	/*.logo-small-gren{
+		width: 112px;
+	}*/
+}
+
+@media (min-width: 1200px) {
+	
+	.menu-full ul li{
+		font-size: 1rem;
+		padding: 20px 0px;
+	}
+	
+	.seccion2 .bloque2{
+		padding: 80px 180px 80px 100px;
+	}
+	.seccion4 .imagenchic .texto, .seccion4  .imagenamakela .texto{
+		top: 55%;
+	}
+	.contenedor-ciervo{
+		background-position: 1150px 80px;
+	}
+	.seccion5 .info{
+		padding: 94px 70px 94px 100px;
+	}
+	.seccion5 .infomod{
+		padding: 94px 100px 94px 70px;
+	}
+	/*.seccion5 .imagen-dec{
+		background-position: -50px bottom;
+	}
+	.seccion5 .imagen-dec-anim{
+		background-position: -220px bottom;
+	}*/
+	.seccion5 .imagen-dec2{
+		background-position: -50px bottom;
+	}
+	.seccion5 .imagen-dec2-anim{
+		background-position: -220px bottom;
+	}
+	.seccion7 .bloque{
+		width: 100%;
+		background-position: 130% top,20% 10%;
+	}
+	.seccion10 .halfbloque2{
+		background-position: left top;
+	}
+	.clic1{
+		display: block;
+	}
+	.clic2{
+		display: none;
+	}
+	.seccion2 .heigth100 .imagenb{
+		background-position: -300px top;
+		opacity: 1;
+		transition: all 3s ease-out;
+	}
+	.seccion2 .heigth100 .imagenb-anim{
+		background-position: -260px top;
+		opacity: 1;
+	}
+
+	.seccion9 .imagen-dec3{
+		height: 790px;
+		background-position: -50px bottom;
+	}
+	.seccion9 .imagen-dec3-anim{
+		background-position: 0px bottom;
+	}
+}
+
+@media (min-width: 1500px) {
+
+	.seccion1{
+		padding: 80px 0px;
+	}
+	.menu-full ul li{
+		font-size: 1rem;
+		padding: 25px 0px;
+	}
+	
+	.seccion2 .bloque2{
+		padding: 100px 300px 100px 210px;
+	}
+	.seccion2 .heigth100 .imagenb{
+		background-position: -130px top;
+		opacity: 1;
+		transition: all 3s ease-out;
+	}
+	.seccion2 .heigth100 .imagenb-anim{
+		background-position: -80px top;
+		opacity: 1;
+	}
+	
+	.seccion5 .info{
+		padding: 114px 280px 114px 100px;
+	}
+	.seccion5 .infomod{
+		padding: 114px 180px 114px 200px;
+	}
+
+	/*.seccion5 .imagen-dec{
+		background-position: -25px bottom;
+	}
+	.seccion5 .imagen-dec-anim{
+		background-position: 0px bottom;
+	}*/
+	.seccion5 .imagen-dec2{
+		background-position: -25px bottom;
+	}
+	.seccion5 .imagen-dec2-anim{
+		background-position: 0px bottom;
+	}
+	.seccion7 .bloque{
+		width: 100%;
+		background-position: right top,20% 10%;
+	}
+	.seccion4 .imagenchic .texto, .seccion4  .imagenamakela .texto{
+		top: 60%;
+	}
+	.contenedor-ciervo{
+		background-position: 1550px 80px;
+	}
+	.seccion9 .imagen-dec3{
+		height: 790px;
+		background-position: -50px bottom;
+	}
+	.seccion9 .imagen-dec3-anim{
+		background-position: 0px bottom;
+	}
+	
+}

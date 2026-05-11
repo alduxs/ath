@@ -1,0 +1,20 @@
+RewriteEngine On
+RewriteCond %{HTTPS} off
+RewriteCond %{HTTP:CDN-LOOP} !cloudflare
+RewriteCond %{REQUEST_URI} !^/.well-known/acme-challenge/
+RewriteCond %{HTTP_HOST} ^(www\.)?argentinatophunts\.com
+RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L,QSA]
+
+RewriteCond %{HTTP_HOST} ^www.argentinatophunts.com$ [NC]
+RewriteRule ^(.*)$ "https://argentinatophunts.com/$1" [R=301,L]
+
+
+#------------------------------------------------------
+
+Rewriterule ^/?$ index.php [QSA,L]
+
+
+#--------------------------------------
+Rewriterule ^amakela?$ amakela.php [QSA,L]
+Rewriterule ^chischaca?$ chischaca.php [QSA,L]
+Rewriterule ^charity-program?$ charity.php [QSA,L]
