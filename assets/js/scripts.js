@@ -1,3 +1,15 @@
+const getEnvironment = () => {
+  const host = window.location.hostname;
+
+  if (host === 'localhost' || host === '127.0.0.1' || host === '192.168.100.106') {
+    return host+'/ath';
+  } else {
+    return host;
+  }
+};
+
+const ENV = getEnvironment();
+
 $(document).ready(function () {
   $(".menu-hamb").click(function () {
     var opacity = $("#menu").css("opacity");
@@ -48,7 +60,7 @@ $(document).ready(function () {
 /* Preloader */
 var cadena = "";
 $.html5Loader({
-  filesToLoad: "https://argentinatophunts.com/files.json",
+  filesToLoad: "http://" + ENV + "/files.json",
   //filesToLoad: "http://localhost/ath/files.json",
   //filesToLoad:'http://192.168.100.210/ath/files.json',
   onComplete: function () {
