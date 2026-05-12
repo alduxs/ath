@@ -4,7 +4,7 @@ define('_CONST_PAGINADO_', "20");
 
 $host = $_SERVER["HTTP_HOST"];
 
-if ($host == "localhost" || $host == "192.168.100.210") :
+if ($host == "localhost" || $host == "192.168.100.106") :
 	$urlweb = "http://" . $host . "/ath/";
 	$urladmin = "http://" . $host . "/ath/admin/";
 else :

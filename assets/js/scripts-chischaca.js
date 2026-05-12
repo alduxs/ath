@@ -1,3 +1,15 @@
+const getEnvironment = () => {
+  const host = window.location.hostname;
+
+  if (host === 'localhost' || host === '127.0.0.1' || host === '192.168.100.106') {
+    return host+'/ath';
+  } else {
+    return host;
+  }
+};
+
+const ENV = getEnvironment();
+
 $(document).ready(function () {
 	$('.menu-hamb').click(function() {
 
@@ -37,8 +49,9 @@ $(document).ready(function () {
 var cadena = "";
 $.html5Loader({
   //filesToLoad: "https://argentinatophunts.com/files-ch.json",
-  filesToLoad:'http://localhost/ath-bck/files-ch.json',
+  //filesToLoad:'http://localhost/ath-bck/files-ch.json',
   //filesToLoad:'http://192.168.100.16/ath-bck/files-ch.json',
+  filesToLoad: "http://" + ENV + "/files-ch.json",
   onComplete: function () {
     $("#html5Loader").fadeOut("slow");
   },

@@ -754,8 +754,70 @@ $rsContPatagonia = $objContenido->getAllContenido($link, $query);
 
             </div>
         </section>
-
         <!-- FIN COMENTARIOS -->
+
+        <!-- COMENTARIOS DESTACADOS -->
+        <section class="seccion15">
+            <div class="container">
+
+                <div class="row">
+                    
+                     <div class="col-12 offset-lg-1 col-lg-10">
+                        <h1>WE’RE EXCITED TO SHARE A FEW WORDS FROM SOME OF OUR HUNTERS AND GIVE YOU<br>A GLIMPSE OF WHAT THE EXPERIENCE HAS BEEN LIKE THIS 2026 SEASON!</h1>
+                     </div>
+
+                     <div class="col-12 offset-lg-1 col-lg-10">
+
+                        <!-- COMENTARIO -->
+                        <div class="contenedor-coment">
+                            <div class="bloque-coment">
+                                <h2 class="fecha">march 2026</h2>
+                                <p>"Chischaca Lodge is hard to put into words. The food, the lodge, the hunting—all exceptional. I was worried it might not feel like real hunting, but the sheer size of the property pulls you into the landscape—you never notice the fence (which does not stop the animals from jumping in or out). Nico guided me onto multiple stags over 2 days and 15 miles, and I was lucky enough to take a 360 SCI—an experience I’ll never forget. Next time, I’m bringing my family to enjoy the lodge while I hunt. The staff and amenities are truly out of this world. Thank you to the entire Chischaca team—Nico, Cecilia, and Valeria—for making the trip seamless and exceptional. And huge kudos to Chef Flavio—for the best food I’ve ever had."</p>
+                                <p class="name">Matthew Centeno</p>
+                                <p class="location">Chischaca Lodge</p>
+                            </div>
+                            <div class="bloque-image" style="background-image: url('assets/images/com-bufalo.png');">
+
+                            </div>
+                        </div>
+                        <!-- COMENTARIO -->
+
+                        <!-- COMENTARIO -->
+                        <div class="contenedor-coment">
+                            <div class="bloque-coment">
+                                <h2 class="fecha">march 2026</h2>
+                                <p>"When traveling to Argentina with my father and brother-in-law, we had four objectives: hunt trophy red stag, experience world class dove hunting, eat delicious steak and enjoy distinct Argentinian wines. Amakela lodge not only met all the objectives but far exceeded them. We had thrilling and successful stag hunts, non-stop dove hunting fun and action, and ate and drank the best food and wines. The guides, staff, and chef are world class and the concierge service goes above and beyond. We had travel delays but they turned a stressful situation into a joy by handling everything and capitalizing on the situation to score extra sightseeing in Buenos Aires. I can't recommend Argentina Top Hunts and Amekela lodge enough."</p>
+                                <p class="name">Clayton Pollard</p>
+                                <p class="location">Amakela Lodge</p>
+                            </div>
+                            <div class="bloque-image" style="background-image: url('assets/images/com-ciervo.png');">
+
+                            </div>
+                        </div>
+                        <!-- COMENTARIO -->
+
+                        <!-- COMENTARIO -->
+                        <div class="contenedor-coment-reverse">
+                            <div class="bloque-coment">
+                                <h2 class="fecha">april 2026</h2>
+                                <p>"Our time at Chischaca exceeded expectations in every way we could imagine: The unbelievable beauty of the estancia with never-ending views, the comfort of the lodge, including fantastic food and housekeeping, the hunt itself - the variety and quality of game, the experience of working with skilled and incredibly personable guides, and the warm pervading atmosphere of Argentine hospitality. Truly a very memorable experience - my group was remarking daily on how incredibly impressed we were with the experience and how fortunate we were to be at Chischaca. Bravo to Nico and the whole ATH team!"</p>
+                                <p class="name">David Ornstein</p>
+                                <p class="location">Chischaca Lodge</p>
+                            </div>
+                            <div class="bloque-image" style="background-image: url('assets/images/com-cabra.png');">
+
+                            </div>
+                        </div>
+                        <!-- COMENTARIO -->
+
+                     </div>
+
+                </div>
+
+
+            </div>
+        </section>
+        <!-- FIN DESTACADOS -->
 
         <!-- MAIN SPONSORS -->
         <section class="seccion13">
@@ -817,12 +879,6 @@ $rsContPatagonia = $objContenido->getAllContenido($link, $query);
                                 <p>However, if you have previously travelled to Argentina with your own firearms, you must visit an Argentine consulate in the USA -New York, Chicago, Atlanta, Houston, Los Angeles, Miami- to request a temporary permit for them before your trip.</p>
                             </div>
 
-                            <!--<div class="bloque2">
-                                <h2>What type of guns do you have for rent?</h2>
-                                <p>We have fine guns in different calibers:</p>
-                                <p>-<strong>Chischaca</strong>: 30-06, 300 WM and 375 H&H, all with Swarovski scopes.</p>
-                                <p>-<strong>Amakela</strong>: 30-06, 300 WM and 375 H&H, with prime scopes and shootguns caliber 12, 20, 28 Beretta and Benelli brands.</p>
-                            </div>-->
 
                             <div class="bloque2">
                                 <h2>Is it possible to bow hunt?</h2>

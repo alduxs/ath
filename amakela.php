@@ -224,7 +224,7 @@ $intQtyRecords = $rsImag->rowCount();
                                 <p>TARGET SPECIES <span class="small">Doves, pigeons and big game.</span></p>
                                 <p>HUNTING METHOD <span class="small">Stalk or blind</span></p>
                                 <p>ACCOMMODATION AND SERVICES<br>
-                                    <span class="small">Accommodation: 7 comfortable ensuite rooms, capacity up to 12 people.</span><br>
+                                    <span class="small">Accommodation: 10 comfortable ensuite rooms, capacity up to 20 people.</span><br>
                                     <span class="small">Pickup trucks transfers according with itinerary.</span><br>
                                     <span class="small">Gourmet experience and beverages during the stay at the lodge.</span><br>
                                     <span class="small">Wi-Fi internet access.</span><br>
@@ -365,10 +365,10 @@ $intQtyRecords = $rsImag->rowCount();
 
 
                     </div>
-                    <div class="col-md-4 chef" style="background-image: url('assets/images/amakela/page/chef.jpg');background-repeat:no-repeat;background-size:cover;background-position:center top;">
+                    <div class="col-md-4 chef" style="background-image: url('assets/images/amakela/page/chef2.jpg');background-repeat:no-repeat;background-size:cover;background-position:center top;">
 
                         <div class="nombre-chef">
-                            Nico, Amakela’s chef
+                            Guadalupe, Amakela’s chef
                         </div>
 
 

@@ -583,7 +583,7 @@ body,html,p,h1{
 	height: auto;
 	position: relative;
 	display: flex;
-	background-image: url("../images/huntwus.jpg");
+	background-image: url("../images/huntwus2.jpg");
 	background-repeat: no-repeat;
 	padding: 120px 30px;
 	text-align: center;
@@ -632,7 +632,7 @@ body,html,p,h1{
 	width: 100%;
 	position: relative;
 	display: flex;
-	background-image: url("../images/huntinfo.jpg"), url("../images/palomas03.png");
+	background-image: url("../images/huntinfo2.jpg"), url("../images/palomas03.png");
 	background-repeat: no-repeat,no-repeat;
 	background-position: 550px top,20% 10%;
 	background-size: cover,auto;
@@ -1393,6 +1393,89 @@ h2{
     left: 0;
 	
 }
+/*SEECION 15 */
+.seccion15{
+	color: #fff;
+	background-color: #384f40;
+	text-align: center;
+	font-weight: 400;
+	padding: 60px 0px;
+}
+.seccion15 h1{
+	font-size: 1.3rem;
+	font-weight: 700;
+}
+.seccion15 .contenedor-coment{
+	border-bottom: 1px solid #69756b;
+	padding-bottom: 20px;
+	display: flex;
+    flex-direction: column;
+}
+.seccion15 .contenedor-coment .bloque-coment{
+	padding: 30px;
+	text-align: center;
+	width: 100%;
+	order: 1;
+	
+}
+.seccion15 .contenedor-coment .bloque-coment .fecha{
+	color: #e6dfd4;
+	font-size: 1rem;
+	text-transform: uppercase;
+}
+.seccion15 .contenedor-coment .bloque-coment .name{
+	margin-top: 30px;
+	color: #ed7b40;
+	font-size: 1rem;
+}
+.seccion15 .contenedor-coment .bloque-coment .location{
+	color: #ffffff;
+	font-size: 1rem;
+	font-style: italic;
+}
+.seccion15 .contenedor-coment .bloque-image{
+	padding: 10px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 300px;
+	order: 2;
+}
+/*SEECION 15 REVERT */
+.seccion15 .contenedor-coment-reverse{
+	padding-bottom: 20px;
+	display: flex;
+    flex-direction: column;
+}
+.seccion15 .contenedor-coment-reverse .bloque-coment{
+	padding: 30px;
+	text-align: center;
+	width: 100%;
+	order: 1;
+}
+.seccion15 .contenedor-coment-reverse .bloque-coment .fecha{
+	color: #e6dfd4;
+	font-size: 1rem;
+	text-transform: uppercase;
+}
+.seccion15 .contenedor-coment-reverse .bloque-coment .name{
+	margin-top: 30px;
+	color: #ed7b40;
+	font-size: 1rem;
+}
+.seccion15 .contenedor-coment-reverse .bloque-coment .location{
+	color: #ffffff;
+	font-size: 1rem;
+	font-style: italic;
+}
+.seccion15 .contenedor-coment-reverse .bloque-image{
+	padding: 10px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 300px;
+	order: 2;
+}
 @media (min-width: 480px) {
 	.top .logo{
 		width: 130px;
@@ -1734,14 +1817,6 @@ h2{
 	.seccion4 .imagenchic .lineas, .seccion4  .imagenamakela .lineas{
 		height: 20%;
 	}
-/*
-	.modal-p{
-		width: 300px;
-		height: 360px;
-		padding: 60px 20px;
-		
-
-	}*/
 	.modal-p h1{
 		font-size: 1.25rem;
 		margin-bottom: 34px;
@@ -1768,6 +1843,54 @@ h2{
 	.seccion14 .ulpdfpatagonia{
 		margin-left: 100px;
 		width: 70%;
+	}
+	/*SEECION 15 */
+
+	.seccion15 .contenedor-coment{
+		border-bottom: 1px solid #69756b;
+		padding-bottom: 0px;
+		display: flex;
+		flex-direction: row;
+	}
+	.seccion15 .contenedor-coment .bloque-coment{
+		padding: 60px;
+		text-align: center;
+		width: 50%;
+		order: 1;
+		border-right: 1px solid #69756b;
+	}
+
+	.seccion15 .contenedor-coment .bloque-image{
+		padding: 10px;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: 70%;
+		height: auto;
+		width: 50%;
+		order: 2;
+	}
+	/*SEECION 15 REVERT */
+	.seccion15 .contenedor-coment-reverse{
+		padding-bottom: 0px;
+		display: flex;
+		flex-direction: row;
+	}
+	.seccion15 .contenedor-coment-reverse .bloque-coment{
+		padding: 60px;
+		text-align: center;
+		width: 50%;
+		order: 2;
+		border-left: 1px solid #69756b;
+	}
+	
+	.seccion15 .contenedor-coment-reverse .bloque-image{
+		padding: 10px;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: 70%;
+		height: auto;
+		width: 50%;
+		order: 1;
 	}
 	
 }

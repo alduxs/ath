@@ -1,3 +1,14 @@
+const getEnvironment = () => {
+  const host = window.location.hostname;
+
+  if (host === 'localhost' || host === '127.0.0.1' || host === '192.168.100.106') {
+    return host+'/ath';
+  } else {
+    return host;
+  }
+};
+
+const ENV = getEnvironment();
 
 $(document).ready(function () {
 	$('.menu-hamb').click(function() {
@@ -37,8 +48,9 @@ $(document).ready(function () {
     /* Preloader */
 var cadena = "";
 $.html5Loader({
+	filesToLoad: "http://" + ENV + "/files.json",
 	//filesToLoad:'http://192.168.100.16/ath-bck/files-amak.json',
-	filesToLoad: "https://argentinatophunts.com/files-amak.json",
+	//filesToLoad: "https://argentinatophunts.com/files-amak.json",
   	//filesToLoad:'http://localhost/ath-bck/files-amak.json',
   onComplete: function () {
     $("#html5Loader").fadeOut("slow");
