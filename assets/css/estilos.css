@@ -1406,11 +1406,20 @@ h2{
 	font-weight: 700;
 }
 .seccion15 .contenedor-coment{
-	border-bottom: 1px solid #69756b;
+	
 	padding-bottom: 20px;
 	display: flex;
     flex-direction: column;
 }
+
+.seccion15 .contenedor-coment,.seccion15 .contenedor-coment-reverse{
+	border-bottom: 1px solid #69756b;
+}
+.seccion15 .contenedor-coment:last-child,.seccion15 .contenedor-coment-reverse:last-child{
+	border-bottom: 0px solid #69756b;
+}
+
+
 .seccion15 .contenedor-coment .bloque-coment{
 	padding: 30px;
 	text-align: center;
@@ -1847,7 +1856,6 @@ h2{
 	/*SEECION 15 */
 
 	.seccion15 .contenedor-coment{
-		border-bottom: 1px solid #69756b;
 		padding-bottom: 0px;
 		display: flex;
 		flex-direction: row;

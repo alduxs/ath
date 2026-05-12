@@ -783,7 +783,7 @@ $rsContPatagonia = $objContenido->getAllContenido($link, $query);
                         <!-- COMENTARIO -->
 
                         <!-- COMENTARIO -->
-                        <div class="contenedor-coment">
+                        <div class="contenedor-coment-reverse">
                             <div class="bloque-coment">
                                 <h2 class="fecha">march 2026</h2>
                                 <p>"When traveling to Argentina with my father and brother-in-law, we had four objectives: hunt trophy red stag, experience world class dove hunting, eat delicious steak and enjoy distinct Argentinian wines. Amakela lodge not only met all the objectives but far exceeded them. We had thrilling and successful stag hunts, non-stop dove hunting fun and action, and ate and drank the best food and wines. The guides, staff, and chef are world class and the concierge service goes above and beyond. We had travel delays but they turned a stressful situation into a joy by handling everything and capitalizing on the situation to score extra sightseeing in Buenos Aires. I can't recommend Argentina Top Hunts and Amekela lodge enough."</p>
@@ -797,7 +797,7 @@ $rsContPatagonia = $objContenido->getAllContenido($link, $query);
                         <!-- COMENTARIO -->
 
                         <!-- COMENTARIO -->
-                        <div class="contenedor-coment-reverse">
+                        <div class="contenedor-coment">
                             <div class="bloque-coment">
                                 <h2 class="fecha">april 2026</h2>
                                 <p>"Our time at Chischaca exceeded expectations in every way we could imagine: The unbelievable beauty of the estancia with never-ending views, the comfort of the lodge, including fantastic food and housekeeping, the hunt itself - the variety and quality of game, the experience of working with skilled and incredibly personable guides, and the warm pervading atmosphere of Argentine hospitality. Truly a very memorable experience - my group was remarking daily on how incredibly impressed we were with the experience and how fortunate we were to be at Chischaca. Bravo to Nico and the whole ATH team!"</p>
@@ -805,6 +805,20 @@ $rsContPatagonia = $objContenido->getAllContenido($link, $query);
                                 <p class="location">Chischaca Lodge</p>
                             </div>
                             <div class="bloque-image" style="background-image: url('assets/images/com-cabra.png');">
+
+                            </div>
+                        </div>
+                        <!-- COMENTARIO -->
+
+                        <!-- COMENTARIO -->
+                        <div class="contenedor-coment-reverse">
+                            <div class="bloque-coment">
+                                <h2 class="fecha">april 2026</h2>
+                                <p>Larry and I can't express enough how amazing our entire trip to Argentina was!!! All of your expert coordination made this trip possible and a vacation of a lifetime!!! Argentina is a beautiful country and the people we met along the way only made our time that more special. Everything at the lodge was perfect - from the hunt experience, the guides, the staff and of course the food...we can't wait to return!</p>
+                                <p class="name">Larry and Nadine Di Cicco</p>
+                                <p class="location">Amakela  Lodge</p>
+                            </div>
+                            <div class="bloque-image" style="background-image: url('assets/images/com-bufalo.png');">
 
                             </div>
                         </div>
