@@ -694,68 +694,6 @@ $rsContPatagonia = $objContenido->getAllContenido($link, $query);
         </section>
         <!-- FIN WHIT US -->
 
-        <!-- COMENTARIOS -->
-        <section class="seccion12">
-            <div class="container">
-
-                <div class="row">
-                    <div class="col-2 flechaizq" id="fizq">
-                        <img src="assets/images/flecha-izq.png" alt="">
-                    </div>
-
-                    <div class="col-8">
-
-                        <div class="row">
-
-                            <div class="col-12">
-                                <h1>WHAT OUR HUNTERS THINK ABOUT US</h1>
-                            </div>
-                            <div class="col-12 comillas">
-                                <img src="assets/images/comillas.png" alt="" class="img-fluid">
-                            </div>
-
-
-                            <div class="col-12">
-                                <?php
-                                $contador = ceil($intQtyRecords / 2);
-                                $contadorInicial = ceil($intQtyRecords / 2);
-                                ?>
-
-                                <div class="owl-carousel owl1">
-                                    <?php while ($arrContenido = $rsCont->fetch(PDO::FETCH_BOTH)) { ?>
-                                        <div class="item ">
-                                            <div class="comentario">
-                                                <?php echo $arrContenido["fd_texto"] ?>
-                                            </div>
-                                            <div class="nombre">
-                                                <?php echo $arrContenido["fd_nombre"] ?>
-                                            </div>
-                                        </div>
-                                    <?php } ?>
-
-                                </div>
-
-                            </div>
-
-
-                        </div>
-
-                    </div>
-
-
-                    <div class="col-2 flechader" id="fder">
-                        <img src="assets/images/flecha-der.png" alt="">
-                    </div>
-
-
-                </div>
-
-
-
-            </div>
-        </section>
-        <!-- FIN COMENTARIOS -->
-
         <!-- COMENTARIOS DESTACADOS -->
         <section class="seccion15">
             <div class="container">
@@ -832,6 +770,70 @@ $rsContPatagonia = $objContenido->getAllContenido($link, $query);
             </div>
         </section>
         <!-- FIN DESTACADOS -->
+
+        <!-- COMENTARIOS -->
+        <section class="seccion12">
+            <div class="container">
+
+                <div class="row">
+                    <div class="col-2 flechaizq" id="fizq">
+                        <img src="assets/images/flecha-izq.png" alt="">
+                    </div>
+
+                    <div class="col-8">
+
+                        <div class="row">
+
+                            <div class="col-12">
+                                <h1>WHAT OUR HUNTERS THINK ABOUT US</h1>
+                            </div>
+                            <div class="col-12 comillas">
+                                <img src="assets/images/comillas.png" alt="" class="img-fluid">
+                            </div>
+
+
+                            <div class="col-12">
+                                <?php
+                                $contador = ceil($intQtyRecords / 2);
+                                $contadorInicial = ceil($intQtyRecords / 2);
+                                ?>
+
+                                <div class="owl-carousel owl1">
+                                    <?php while ($arrContenido = $rsCont->fetch(PDO::FETCH_BOTH)) { ?>
+                                        <div class="item ">
+                                            <div class="comentario">
+                                                <?php echo $arrContenido["fd_texto"] ?>
+                                            </div>
+                                            <div class="nombre">
+                                                <?php echo $arrContenido["fd_nombre"] ?>
+                                            </div>
+                                        </div>
+                                    <?php } ?>
+
+                                </div>
+
+                            </div>
+
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="col-2 flechader" id="fder">
+                        <img src="assets/images/flecha-der.png" alt="">
+                    </div>
+
+
+                </div>
+
+
+
+            </div>
+        </section>
+        <!-- FIN COMENTARIOS -->
+
+        
 
         <!-- MAIN SPONSORS -->
         <section class="seccion13">
