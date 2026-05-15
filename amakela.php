@@ -472,7 +472,7 @@ $intQtyRecords = $rsImag->rowCount();
     <script src="assets/js/owl.carousel.js"></script>
 
     <!-- Custom -->
-    <script src="assets/js/scripts-amakela.js?v=1"></script>
+    <script src="assets/js/scripts-amakela.js?v=2"></script>
 
     <script>
         var pesActiva = 0;

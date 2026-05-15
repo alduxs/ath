@@ -96,7 +96,8 @@ $rsCont = $objContenido->getOneContenido($link,$arrData2,$query);
 											<tr>
 												<th>Nombre y Apellido</th>
                                                 <th>Posición</th>
-												<th>Publicado</th>	
+												<th>Publicado</th>
+												<th>Destacado</th>
 												<th>Acción</th>
 											</tr>
 										</thead>
@@ -110,6 +111,8 @@ $rsCont = $objContenido->getOneContenido($link,$arrData2,$query);
                                                     <td><?php echo $arrContenido["fd_posicion"]; ?></td>
 
 													<td><?php if ($arrContenido["fd_publicado"] == 0) { ?><a href="#" class="btn btn-default btn-circle"><i class="fa fa-check"></i></a><?php } else { ?><a href="#" class="btn btn-info btn-circle"><i class="fa fa-check"></i></a><?php } ?></td>
+
+													<td><?php if ($arrContenido["fd_destacado"] == 0) { ?><a href="#" class="btn btn-default btn-circle"><i class="fa fa-check"></i></a><?php } else { ?><a href="#" class="btn btn-info btn-circle"><i class="fa fa-check"></i></a><?php } ?></td>
 													
 													<td class="tooltip-demo">
 														

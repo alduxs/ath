@@ -6,12 +6,24 @@ include_once('includes/funciones.inc.php');
 $link = Conectarse();
 //
 $objContenido = new General();
+//
 $query = "SELECT * FROM feedback WHERE fd_publicado = 1 ORDER BY fd_posicion ASC";
 $rsCont = $objContenido->getAllContenido($link, $query);
 $intQtyRecords = $rsCont->rowCount();
+//FEEDBACK DESTACADOS
+$queryfd = "SELECT * FROM feedback WHERE fd_publicado = 1 AND fd_destacado = 1 ORDER BY fd_posicion ASC";
+$rsContfd = $objContenido->getAllContenido($link, $queryfd);
+$intQtyRecordsfd = $rsContfd->rowCount();
 //PATAGONIA
 $query = "SELECT * FROM patagonia WHERE publicado = 1 ORDER BY id ASC";
 $rsContPatagonia = $objContenido->getAllContenido($link, $query);
+
+// Arreglos
+$arrImagenes = array(
+    1 => "com-bufalo.png",
+    2 => "com-ciervo.png",
+    3 => "com-cabra.png",
+);
 ?>
 
 <html lang="en">
@@ -312,9 +324,6 @@ $rsContPatagonia = $objContenido->getAllContenido($link, $query);
                     </video>
                 </div>
             </div>
-
-
-
 
 
             <div class="menu-full">
@@ -694,6 +703,9 @@ $rsContPatagonia = $objContenido->getAllContenido($link, $query);
         </section>
         <!-- FIN WHIT US -->
 
+        $rsContfd = $objContenido->getAllContenido($link, $queryfd);
+$intQtyRecordsfd = $rsContfd->rowCount();
+
         <!-- COMENTARIOS DESTACADOS -->
         <section class="seccion15">
             <div class="container">
@@ -705,22 +717,50 @@ $rsContPatagonia = $objContenido->getAllContenido($link, $query);
                      </div>
 
                      <div class="col-12 offset-lg-1 col-lg-10">
+                        <?php
+                        $contador = 1;
+                        $contadorClass = 1;
+                        ?>
+                        <?php while ($arrContenido = $rsContfd->fetch(PDO::FETCH_BOTH)) { ?>
+                        <?php
+                            $string = $arrContenido["fd_nombre"];
+                            $stringArray = explode(",", $string);
+                            $nombre = $stringArray[0];
+                            $lodge = $stringArray[1];
+                            $month = $stringArray[2];
 
-                        <!-- COMENTARIO -->
-                        <div class="contenedor-coment">
-                            <div class="bloque-coment">
-                                <h2 class="fecha">march 2026</h2>
-                                <p>"Chischaca Lodge is hard to put into words. The food, the lodge, the hunting—all exceptional. I was worried it might not feel like real hunting, but the sheer size of the property pulls you into the landscape—you never notice the fence (which does not stop the animals from jumping in or out). Nico guided me onto multiple stags over 2 days and 15 miles, and I was lucky enough to take a 360 SCI—an experience I’ll never forget. Next time, I’m bringing my family to enjoy the lodge while I hunt. The staff and amenities are truly out of this world. Thank you to the entire Chischaca team—Nico, Cecilia, and Valeria—for making the trip seamless and exceptional. And huge kudos to Chef Flavio—for the best food I’ve ever had."</p>
-                                <p class="name">Matthew Centeno</p>
-                                <p class="location">Chischaca Lodge</p>
+                            if($contadorClass % 2 == 0){
+                                $clase = "contenedor-coment-reverse";
+                            } else {
+                                $clase = "contenedor-coment";
+                            }
+                        ?>
+                            <!-- COMENTARIO -->
+                            <div class="<?= $clase ?>">
+                                <div class="bloque-coment">
+                                    <h2 class="fecha"><?php echo $month; ?></h2>
+                                    <p><?php echo html_entity_decode($arrContenido["fd_texto"]); ?></p>
+                                    <p class="name"><?php echo $nombre; ?></p>
+                                    <p class="location"><?php echo $lodge; ?></p>
+                                </div>
+                                <div class="bloque-image" style="background-image: url('assets/images/<?php echo $arrImagenes[$contador]; ?>');">
+
+                                </div>
                             </div>
-                            <div class="bloque-image" style="background-image: url('assets/images/com-bufalo.png');">
+                            <!-- COMENTARIO -->
+                             <?php
+                                if($contador == 3){
+                                    $contador = 1;
+                                } else {
+                                    $contador = $contador + 1;
+                                }
+                                $contadorClass = $contadorClass + 1;
+                             ?>
+                         <?php } ?>
 
-                            </div>
-                        </div>
-                        <!-- COMENTARIO -->
+                         <!--
 
-                        <!-- COMENTARIO -->
+                        
                         <div class="contenedor-coment-reverse">
                             <div class="bloque-coment">
                                 <h2 class="fecha">march 2026</h2>
@@ -732,9 +772,7 @@ $rsContPatagonia = $objContenido->getAllContenido($link, $query);
 
                             </div>
                         </div>
-                        <!-- COMENTARIO -->
-
-                        <!-- COMENTARIO -->
+                       
                         <div class="contenedor-coment">
                             <div class="bloque-coment">
                                 <h2 class="fecha">april 2026</h2>
@@ -746,9 +784,7 @@ $rsContPatagonia = $objContenido->getAllContenido($link, $query);
 
                             </div>
                         </div>
-                        <!-- COMENTARIO -->
-
-                        <!-- COMENTARIO -->
+                       
                         <div class="contenedor-coment-reverse">
                             <div class="bloque-coment">
                                 <h2 class="fecha">april 2026</h2>
@@ -760,7 +796,7 @@ $rsContPatagonia = $objContenido->getAllContenido($link, $query);
 
                             </div>
                         </div>
-                        <!-- COMENTARIO -->
+                       -->
 
                      </div>
 
@@ -1130,7 +1166,7 @@ $rsContPatagonia = $objContenido->getAllContenido($link, $query);
     <script src="assets/js/jquery.validate.js"></script>
 
     <!-- Custom -->
-    <script src="assets/js/scripts.js?v=20"></script>
+    <script src="assets/js/scripts.js?v=22"></script>
 
     <script>
         var pesActiva = 0;

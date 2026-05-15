@@ -111,6 +111,13 @@ $arrCont = $rsCont->fetch(PDO::FETCH_BOTH);
                                     </div>
                                     <div class="hr-line-dashed col-xs-12"></div>
 
+                                    <!-- Destacado -->
+                                    <div class="form-group col-xs-12">
+                                        <label for="destacado">Destacado</label>
+                                        <p><label class="checkbox-inline i-checks"> <input type="radio" value="1" name="destacado" <?php if (!(strcmp($arrCont["fd_destacado"], 1))) {echo "checked=\"checked\"";} ?>> <i></i> Si </label><label class="checkbox-inline i-checks"> <input name="destacado" type="radio" value="0" <?php if (!(strcmp($arrCont["fd_destacado"], 0))) {echo "checked=\"checked\"";} ?>> <i></i> No </label></p>
+                                    </div>
+                                    <div class="hr-line-dashed col-xs-12"></div>
+
 
                                     <div class="form-group text-center">
                                         <input name="agregar" type="submit" class="btn btn-primary" id="agregar" value="Guardar">

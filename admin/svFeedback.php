@@ -23,10 +23,11 @@ switch ($strOperacion) {
             ['value'=> $_POST["nombre"],'tipo'=> 'TH2'],
             ['value'=> $_POST["textos"],'tipo'=> 'TH2'],
             ['value'=> $_POST["posicion"],'tipo'=> 'AN'],
-            ['value'=> $_POST["publicada"],'tipo'=> 'NU']
+            ['value'=> $_POST["publicada"],'tipo'=> 'NU'],
+            ['value'=> $_POST["destacado"],'tipo'=> 'NU']
           ];
           //
-          $query = "INSERT INTO feedback (fd_nombre,fd_texto,fd_posicion,fd_publicado) VALUES (?,?,?,?)";
+          $query = "INSERT INTO feedback (fd_nombre,fd_texto,fd_posicion,fd_publicado,fd_destacado) VALUES (?,?,?,?,?)";
           $intIdRegistro = $objContenido->insertContenido($link, $arrData2, $query);
           
         break;
@@ -44,11 +45,12 @@ switch ($strOperacion) {
             ['value'=> $_POST["textos"],'tipo'=> 'TH2'],
             ['value'=> $_POST["posicion"],'tipo'=> 'AN'],
             ['value'=> $_POST["publicada"],'tipo'=> 'NU'],
+            ['value'=> $_POST["destacado"],'tipo'=> 'NU'],
             ['value'=> $idPost,'tipo'=> 'AN']
           ];
         //
 
-        $query = "UPDATE feedback SET fd_nombre = ?,fd_texto = ?,fd_posicion = ?,fd_publicado = ? WHERE fd_id = ?";
+        $query = "UPDATE feedback SET fd_nombre = ?,fd_texto = ?,fd_posicion = ?,fd_publicado = ?,fd_destacado = ? WHERE fd_id = ?";
         $intIdRegistro = $objContenido->updateContenido($link, $arrData2, $query);
       
 

@@ -2,9 +2,9 @@ const getEnvironment = () => {
   const host = window.location.hostname;
 
   if (host === 'localhost' || host === '127.0.0.1' || host === '192.168.100.106') {
-    return host+'/ath';
+    return 'http://'+host+'/ath';
   } else {
-    return host;
+    return 'https://'+host;
   }
 };
 
@@ -60,7 +60,7 @@ $(document).ready(function () {
 /* Preloader */
 var cadena = "";
 $.html5Loader({
-  filesToLoad: "http://" + ENV + "/files.json",
+  filesToLoad: ENV + "/files.json",
   //filesToLoad: "http://localhost/ath/files.json",
   //filesToLoad:'http://192.168.100.210/ath/files.json',
   onComplete: function () {

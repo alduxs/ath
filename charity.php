@@ -273,7 +273,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <script src="assets/js/owl.carousel.js"></script>
 
   <!-- Custom -->
-  <script src="assets/js/scripts-amakela.js?v=1"></script>
+  <script src="assets/js/scripts-amakela.js?v=2"></script>
 
   <script>
     var pesActiva = 0;
