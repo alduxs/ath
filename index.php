@@ -175,7 +175,7 @@ shuffle($arrImagenes);
             </div>
         </div>
     </div>
-
+    
     <!-- Modal para tomar datos de-email -->
     <div class="modal-g" style="display: none;" id="modalg">
         <div class="fondo-modal-black">
