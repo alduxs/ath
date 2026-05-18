@@ -24,6 +24,7 @@ $arrImagenes = array(
     2 => "com-ciervo.png",
     3 => "com-cabra.png",
 );
+shuffle($arrImagenes);
 ?>
 
 <html lang="en">
@@ -703,8 +704,6 @@ $arrImagenes = array(
         </section>
         <!-- FIN WHIT US -->
 
-        $rsContfd = $objContenido->getAllContenido($link, $queryfd);
-$intQtyRecordsfd = $rsContfd->rowCount();
 
         <!-- COMENTARIOS DESTACADOS -->
         <section class="seccion15">
@@ -718,7 +717,7 @@ $intQtyRecordsfd = $rsContfd->rowCount();
 
                      <div class="col-12 offset-lg-1 col-lg-10">
                         <?php
-                        $contador = 1;
+                        $contador = 0;
                         $contadorClass = 1;
                         ?>
                         <?php while ($arrContenido = $rsContfd->fetch(PDO::FETCH_BOTH)) { ?>
@@ -749,8 +748,8 @@ $intQtyRecordsfd = $rsContfd->rowCount();
                             </div>
                             <!-- COMENTARIO -->
                              <?php
-                                if($contador == 3){
-                                    $contador = 1;
+                                if($contador == 2){
+                                    $contador = 0;
                                 } else {
                                     $contador = $contador + 1;
                                 }
