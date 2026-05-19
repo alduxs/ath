@@ -596,12 +596,18 @@ shuffle($arrImagenes);
 
                                     </div>
                                 </div>
-
+                                <!--
                                 <div class="col-md-4 p-0">
                                     <div class="imagen-dec" style="background-image: url('assets/images/chischaca/imagen04.jpg');" id="imgdec3">
 
                                     </div>
                                 </div>
+    -->
+                                <div class="col-md-4 p-0">
+                                   <video  autoplay="true" muted="true" loop="true" playsinline="" src="assets/video/bosque-bufalo.mp4" id="imgdec3"></video>
+                                </div>
+
+    
                             </div>
 
                         </div>
@@ -670,12 +676,17 @@ shuffle($arrImagenes);
 
                                     </div>
                                 </div>
-
+                                <!--
                                 <div class="col-md-4 p-0">
                                     <div class="imagen-dec2" style="background-image: url('assets/images/amakela/imag04.jpg');">
 
                                     </div>
+                                </div>-->
+
+                                <div class="col-md-4 p-0">
+                                    <video  autoplay="true" muted="true" loop="true" playsinline="" src="assets/video/caza-jeep.mp4" id="imgdec7"></video>
                                 </div>
+
                             </div>
 
 
@@ -1036,15 +1047,15 @@ shuffle($arrImagenes);
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-md-4 p-0">
-                        <div class="imagen-dec3" style="background-image: url('assets/images/foto1-sep.jpg');" id="imgdec3"></div>
+                        <div class="imagen-dec3" style="background-image: url('assets/images/foto1-sep.jpg');" id="imgdec4"></div>
                     </div>
 
                     <div class="col-md-4 p-0">
-                        <div class="imagen-dec3" style="background-image: url('assets/images/foto2-sep.jpg');" id="imgdec3"></div>
+                        <div class="imagen-dec3" style="background-image: url('assets/images/foto2-sep.jpg');" id="imgdec5"></div>
                     </div>
 
                     <div class="col-md-4 p-0">
-                        <div class="imagen-dec3" style="background-image: url('assets/images/foto3-sep.jpg');" id="imgdec3"></div>
+                        <div class="imagen-dec3" style="background-image: url('assets/images/foto3-sep.jpg');" id="imgdec6"></div>
                     </div>
                 </div>
             </div>
@@ -1236,6 +1247,13 @@ shuffle($arrImagenes);
                 }*/
                 ulPdfPatagonia.classList.toggle("ulpdfpatagoniashow");
             });
+
+
+            /* VIDEOS */
+            let tamanioHorizontalImagen = $("#imgdec1").width();
+            let tamanioVerticalImagen = $("#imgdec1").height();
+            $("#imgdec3").width(tamanioHorizontalImagen).height(tamanioVerticalImagen);
+            $("#imgdec7").width(tamanioHorizontalImagen).height(tamanioVerticalImagen) ;
 
 
         });

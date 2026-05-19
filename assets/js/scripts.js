@@ -252,6 +252,7 @@ function resizeImage() {
 
   $(".imagen-dec").height(alto3chischaca);
 
+  /*
   var scene4 = new ScrollMagic.Scene({
     triggerElement: ".anim3",
     duration: 200,
@@ -261,6 +262,7 @@ function resizeImage() {
     .on("enter", function (e) {
       $(".imagen-dec").addClass("imagen-dec-anim");
     });
+    */
 
   /* ANIMACION AMAKELA */
 
@@ -280,6 +282,7 @@ function resizeImage() {
       }
     });
 
+    /*
   var scene6 = new ScrollMagic.Scene({
     triggerElement: ".anim5",
     duration: 200,
@@ -289,7 +292,7 @@ function resizeImage() {
     .on("enter", function (e) {
       $(".imagen-dec2").addClass("imagen-dec2-anim");
     });
-
+*/
   /* ANIMACION WHY */
 
   var altowhwu = $(".seccion6").height();
