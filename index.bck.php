@@ -7,7 +7,7 @@ $link = Conectarse();
 //
 $objContenido = new General();
 //
-$query = "SELECT * FROM feedback WHERE fd_publicado = 1 AND fd_destacado = 0 ORDER BY fd_posicion ASC";
+$query = "SELECT * FROM feedback WHERE fd_publicado = 1 ORDER BY fd_posicion ASC";
 $rsCont = $objContenido->getAllContenido($link, $query);
 $intQtyRecords = $rsCont->rowCount();
 //FEEDBACK DESTACADOS
@@ -125,8 +125,6 @@ shuffle($arrImagenes);
 
     <meta name="facebook-domain-verification" content="d29tvw8q1bjhrakh88a2iepl063nbz" />
 
-
-
     <!-- Meta Pixel Code -->
     <script>
         ! function(f, b, e, v, n, t, s) {
@@ -153,19 +151,6 @@ shuffle($arrImagenes);
     <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1075701056894279&ev=PageView&noscript=1" /></noscript>
     <!-- End Meta Pixel Code -->
 
-    <style>
-        .videocont2{
-            position: relative;
-        }
-         .videocont2 video{
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 220%;
-            height: auto;
-            object-fit: cover;
-        }
-    </style>
 
 </head>
 
@@ -332,6 +317,7 @@ shuffle($arrImagenes);
         <!-- Seccion 1 -->
         <section class="seccion1">
 
+            <div style="position: absolute;z-index: 10000;width: 100%;height: 100%;display: flex;justify-content: center;align-items: center;font-size: 4rem;font-weight: bold;">PAGINA CON CAMBIOS</div>
 
             <div class="videocont">
                 <div class="videohome">
@@ -619,10 +605,7 @@ shuffle($arrImagenes);
                                 </div>
     -->
                                 <div class="col-md-4 p-0">
-                                    <div class="videocont2" id="videocont1">
-                                        <video  autoplay="true" muted="true" loop="true" playsinline="" src="assets/video/bosque-bufalo.mp4" id="imgdec3"></video>
-                                    </div>
-                                   
+                                   <video  autoplay="true" muted="true" loop="true" playsinline="" src="assets/video/bosque-bufalo.mp4" id="imgdec3"></video>
                                 </div>
 
     
@@ -683,39 +666,30 @@ shuffle($arrImagenes);
 
                         <div class="col-md-12 anim5">
                             <div class="row">
-
-                                 <div class="col-md-4 p-0">
-                                    <div class="videocont2" id="videocont2">
-                                        <video  autoplay="true" muted="true" loop="true" playsinline="" src="assets/video/caza-jeep.mp4" id="imgdec7"></video>
-                                    </div>
-                                    
-                                </div>
-
-                                <!--
-
                                 <div class="col-md-4 p-0">
                                     <div class="imagen-dec2" style="background-image: url('assets/images/amakela/imag02.jpg');">
 
                                     </div>
-                                </div>-->
+                                </div>
 
                                 <div class="col-md-4 p-0">
                                     <div class="imagen-dec2" style="background-image: url('assets/images/amakela/imag03.jpg');">
 
                                     </div>
                                 </div>
-                                
+                                <!--
                                 <div class="col-md-4 p-0">
                                     <div class="imagen-dec2" style="background-image: url('assets/images/amakela/imag04.jpg');">
 
                                     </div>
+                                </div>-->
+
+                                <div class="col-md-4 p-0">
+                                    <video  autoplay="true" muted="true" loop="true" playsinline="" src="assets/video/caza-jeep.mp4" id="imgdec7"></video>
                                 </div>
 
-                               
-
-                                
-
                             </div>
+
 
                         </div>
                     </div>
@@ -1279,9 +1253,6 @@ shuffle($arrImagenes);
             /* VIDEOS */
             let tamanioHorizontalImagen = $("#imgdec1").width();
             let tamanioVerticalImagen = $("#imgdec1").height();
-
-            $(".videocont1").width(tamanioHorizontalImagen).height(tamanioVerticalImagen);
-
             $("#imgdec3").width(tamanioHorizontalImagen).height(tamanioVerticalImagen);
             $("#imgdec7").width(tamanioHorizontalImagen).height(tamanioVerticalImagen) ;
 

@@ -75,7 +75,7 @@ $arrCont = $rsCont->fetch(PDO::FETCH_BOTH);
                                 <form action="svFeedback.php" method="post" enctype="multipart/form-data" name="form1">
                                     <input type="hidden" name="strOperacion" value="U" />
                                     <input name="id" type="hidden" id="id" value="<?php echo $intIdCont ?>">
-                                    <input type="hidden" name="intPage" value="<?php echo $intPage ?>" />
+                                    <!--<input type="hidden" name="intPage" value="<?php //echo $intPage ?>" />-->
 
 
                                     <!-- Nombre -->
@@ -113,8 +113,8 @@ $arrCont = $rsCont->fetch(PDO::FETCH_BOTH);
 
                                     <!-- Destacado -->
                                     <div class="form-group col-xs-12">
-                                        <label for="destacado">Destacado</label>
-                                        <p><label class="checkbox-inline i-checks"> <input type="radio" value="1" name="destacado" <?php if (!(strcmp($arrCont["fd_destacado"], 1))) {echo "checked=\"checked\"";} ?>> <i></i> Si </label><label class="checkbox-inline i-checks"> <input name="destacado" type="radio" value="0" <?php if (!(strcmp($arrCont["fd_destacado"], 0))) {echo "checked=\"checked\"";} ?>> <i></i> No </label></p>
+                                        <label for="destacado">Publicado en</label>
+                                        <p><label class="checkbox-inline i-checks"> <input type="radio" value="1" name="destacado" <?php if (!(strcmp($arrCont["fd_destacado"], 1))) {echo "checked=\"checked\"";} ?>> <i></i> Destacados </label><label class="checkbox-inline i-checks"> <input name="destacado" type="radio" value="0" <?php if (!(strcmp($arrCont["fd_destacado"], 0))) {echo "checked=\"checked\"";} ?>> <i></i> Carrusel </label></p>
                                     </div>
                                     <div class="hr-line-dashed col-xs-12"></div>
 
