@@ -65,7 +65,7 @@ $.html5Loader({
   //filesToLoad:'http://192.168.100.210/ath/files.json',
   onComplete: function () {
     $("#html5Loader").fadeOut("slow");
-    $("#modalg").delay(10000).fadeIn("slow");
+    //$("#modalg").delay(10000).fadeIn("slow");
   },
   onUpdate: function (percentage) {
     cadena = percentage + "%";

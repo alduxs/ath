@@ -125,6 +125,8 @@ shuffle($arrImagenes);
 
     <meta name="facebook-domain-verification" content="d29tvw8q1bjhrakh88a2iepl063nbz" />
 
+
+
     <!-- Meta Pixel Code -->
     <script>
         ! function(f, b, e, v, n, t, s) {
@@ -151,6 +153,19 @@ shuffle($arrImagenes);
     <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1075701056894279&ev=PageView&noscript=1" /></noscript>
     <!-- End Meta Pixel Code -->
 
+    <style>
+        .videocont2{
+            position: relative;
+        }
+         .videocont2 video{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 220%;
+            height: auto;
+            object-fit: cover;
+        }
+    </style>
 
 </head>
 
@@ -604,7 +619,10 @@ shuffle($arrImagenes);
                                 </div>
     -->
                                 <div class="col-md-4 p-0">
-                                   <video  autoplay="true" muted="true" loop="true" playsinline="" src="assets/video/bosque-bufalo.mp4" id="imgdec3"></video>
+                                    <div class="videocont2" id="videocont1">
+                                        <video  autoplay="true" muted="true" loop="true" playsinline="" src="assets/video/bosque-bufalo.mp4" id="imgdec3"></video>
+                                    </div>
+                                   
                                 </div>
 
     
@@ -684,8 +702,13 @@ shuffle($arrImagenes);
                                 </div>-->
 
                                 <div class="col-md-4 p-0">
-                                    <video  autoplay="true" muted="true" loop="true" playsinline="" src="assets/video/caza-jeep.mp4" id="imgdec7"></video>
+                                    <div class="videocont2" id="videocont2">
+                                        <video  autoplay="true" muted="true" loop="true" playsinline="" src="assets/video/caza-jeep.mp4" id="imgdec7"></video>
+                                    </div>
+                                    
                                 </div>
+
+                                
 
                             </div>
 
@@ -1251,6 +1274,9 @@ shuffle($arrImagenes);
             /* VIDEOS */
             let tamanioHorizontalImagen = $("#imgdec1").width();
             let tamanioVerticalImagen = $("#imgdec1").height();
+
+            $(".videocont1").width(tamanioHorizontalImagen).height(tamanioVerticalImagen);
+
             $("#imgdec3").width(tamanioHorizontalImagen).height(tamanioVerticalImagen);
             $("#imgdec7").width(tamanioHorizontalImagen).height(tamanioVerticalImagen) ;
 

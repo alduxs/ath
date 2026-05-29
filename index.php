@@ -317,6 +317,7 @@ shuffle($arrImagenes);
         <!-- Seccion 1 -->
         <section class="seccion1">
 
+            <div style="position: absolute;z-index: 10000;width: 100%;height: 100%;display: flex;justify-content: center;align-items: center;font-size: 4rem;font-weight: bold;">PAGINA CON CAMBIOS</div>
 
             <div class="videocont">
                 <div class="videohome">
