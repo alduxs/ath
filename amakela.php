@@ -365,7 +365,7 @@ $intQtyRecords = $rsImag->rowCount();
 
 
                     </div>
-                    <div class="col-md-4 chef" style="background-image: url('assets/images/amakela/page/chef2.jpg');background-repeat:no-repeat;background-size:cover;background-position:center top;">
+                    <div class="col-md-4 chef" style="background-image: url('assets/images/amakela/page/chef3.jpg');background-repeat:no-repeat;background-size:cover;background-position:center top;">
 
                         <div class="nombre-chef">
                             Guadalupe, Amakela’s chef
