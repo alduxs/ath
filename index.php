@@ -508,7 +508,7 @@ shuffle($arrImagenes);
 
                     </div>
 
-                    <div class="item slider2" style="background-image: url('assets/slides/foto-fondo-02.jpg');">
+                    <div class="item slider2" style="background-image: url('assets/slides/foto-fondo-012.jpg');">
 
                     </div>
 
@@ -523,23 +523,24 @@ shuffle($arrImagenes);
 
                 <div class="row">
                     <div class="col-12">
-                        <<p class="cintillo">PILOLIL LODGE</p>
                         <h1>Your ultimate free-range red stag<br>hunting experience in PATAGONIA.</h1>
                     </div>
 
                     <div class="col-12 col-md-6 col-lg-5 offset-lg-1 separacioncolumna">
-                        <p class="texto txt-bold">At PILOLIL Lodge, across 24,700 acres of pure Patagonian landscape, you’ll discover natural habitats where powerful free-range red stags roam freely in the hunting season from mid-March to mid-April.</p>
+                        <p class="texto txt-bold separacionparrafo">Our PATAGONIA delivers an experience like no other!</p>
+                        <p class="texto txt-bold ">HUNT FREE-RANGE red stags across Patagonia's open landscapes during the hunting season from mid-March to mid-April.</p>
                     </div>
 
                     <div class="col-12 col-md-6 col-lg-5">
-                        <p class="texto txt-bold separacionparrafo">Open spots for the 2026 and 2027 Seasons</p>
-                        <p class="texto separacionparrafo">You can also enjoy world-class fly fishing and outdoor adventures like horseback riding and trekking. Every experience is fully tailor-made.</p>
+                        <p class="texto separacionparrafo">You can also enjoy world-class FLY FISHING and OUTDOOR ACTIVITIES like horseback riding and trekking. Every experience is fully tailor-made.</p>
                         <p class="texto-contacto"> <a href="mailto:info@argentinatophunts.com">Contact us anytime for more information!</a></p>
 
+                        <!--
                         <div class="redmore">
                             <div class="linea"></div>
                             <div class="link"><a href="#" id="readpatagonia">read more</a> </div>
                         </div>
+    -->
 
                         <ul class="ulpdfpatagonia">
                             <?php while ($arrContenidoPatagonia = $rsContPatagonia->fetch(PDO::FETCH_BOTH)) { ?>
