@@ -523,7 +523,7 @@ shuffle($arrImagenes);
 
                 <div class="row">
                     <div class="col-12">
-                        <p class="cintillo">PILOLIL LODGE</p>
+                        <<p class="cintillo">PILOLIL LODGE</p>
                         <h1>Your ultimate free-range red stag<br>hunting experience in PATAGONIA.</h1>
                     </div>
 
@@ -1203,7 +1203,7 @@ shuffle($arrImagenes);
     <script src="assets/js/jquery.validate.js"></script>
 
     <!-- Custom -->
-    <script src="assets/js/scripts.js?v=22"></script>
+    <script src="assets/js/scripts.js?v=23"></script>
 
     <script>
         var pesActiva = 0;
