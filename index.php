@@ -523,7 +523,7 @@ shuffle($arrImagenes);
 
                 <div class="row">
                     <div class="col-12">
-                        <h1>Your ultimate free-range red stag<br>hunting experience in PATAGONIA.</h1>
+                        <h1>Your ultimate free-range red stag<br>hunting experience in <span style="background-image: url('assets/images/subrrayado-patagonia.png');display: inline-flex;background-repeat: no-repeat;background-position: center bottom;padding: 0px 0px 10px 0px;">PATAGONIA</span>.</h1>
                     </div>
 
                     <div class="col-12 col-md-6 col-lg-5 offset-lg-1 separacioncolumna">
@@ -533,7 +533,7 @@ shuffle($arrImagenes);
 
                     <div class="col-12 col-md-6 col-lg-5">
                         <p class="texto separacionparrafo">You can also enjoy world-class FLY FISHING and OUTDOOR ACTIVITIES like horseback riding and trekking. Every experience is fully tailor-made.</p>
-                        <p class="texto-contacto"> <a href="mailto:info@argentinatophunts.com">Contact us anytime for more information!</a></p>
+                        <p class="texto-contacto"> <a href="mailto:info@argentinatophunts.com"><span style="background-image: url('assets/images/subrayado-contact.png');display: inline-flex;background-position: 3px center;background-repeat: no-repeat;padding: 10px 4px 10px 10px;background-size: 100%;">Contact us</span> anytime for more information!</a></p>
 
                         <!--
                         <div class="redmore">
