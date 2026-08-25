@@ -18,6 +18,12 @@ $intQtyRecordsfd = $rsContfd->rowCount();
 $query = "SELECT * FROM patagonia WHERE publicado = 1 ORDER BY id ASC";
 $rsContPatagonia = $objContenido->getAllContenido($link, $query);
 
+//MODAL
+$query = "SELECT * FROM modal WHERE modal_id = 1";
+$rsContModal = $objContenido->getAllContenido($link, $query);
+$arrContenidoModal = $rsContModal->fetch(PDO::FETCH_BOTH);
+//var_dump($arrContenidoModal);exit();
+
 // Arreglos
 $arrImagenes = array(
     1 => "com-bufalo.png",
@@ -154,6 +160,16 @@ shuffle($arrImagenes);
     <!-- End Meta Pixel Code -->
 
     <style>
+        .modal-p {
+            background-image: var(--modal-image);
+        }
+
+        @media (max-width: 575.98px) {
+            .modal-p {
+                background-image: var(--modal-image-mobile);
+            }
+        }
+
         .videocont2{
             position: relative;
         }
@@ -194,12 +210,12 @@ shuffle($arrImagenes);
     <!-- Modal para tomar datos de-email -->
     <div class="modal-g" style="display: none;" id="modalg">
         <div class="fondo-modal-black">
-            <div class="modal-p">
+            <div class="modal-p" style="--modal-image: url('assets/images/<?php echo $arrContenidoModal['modal_image']; ?>'); --modal-image-mobile: url('assets/images/<?php echo $arrContenidoModal['modal_image_rp']; ?>');">
                 <div class="row">
                     <div id="cont1">
                         <div class="col-md-12 col-lg-7">
                             <h1>Tailor-made big game, dove,<br>and pigeon hunting experiences!</h1>
-                            <p class="p1">Also, exclusive free range red stag<br>hunting in Patagonia awaits. </p>
+                            <!--<p class="p1">Also, exclusive free range red stag<br>hunting in Patagonia awaits. </p>-->
                             <p class="p2">Get in touch for detailed info,<br>rates and available spots.</p>
                         </div>
                         <div class="col-md-12 col-lg-8">
@@ -504,11 +520,15 @@ shuffle($arrImagenes);
             <div class="bloque1">
                 <div class="owl-carousel owl3">
 
-                    <div class="item slider1" style="background-image: url('assets/slides/foto-fondo-01.jpg');">
+                    <div class="item slider1" style="background-image: url('assets/slides/foto-fondo-011.jpg');">
 
                     </div>
 
                     <div class="item slider2" style="background-image: url('assets/slides/foto-fondo-012.jpg');">
+
+                    </div>
+
+                    <div class="item slider2" style="background-image: url('assets/slides/foto-fondo-013.jpg');">
 
                     </div>
 

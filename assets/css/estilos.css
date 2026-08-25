@@ -1169,7 +1169,7 @@ h2{
 	margin-top: auto;
 	margin-bottom: auto;
 	/*background-image: url("../images/modal-fondo2.jpg");*/
-	background-image: url("../images/modal-fondo4-rp.jpg");
+	/*background-image: url("../images/modal-fondo4-rp.jpg");*/
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
@@ -1823,7 +1823,7 @@ h2{
 		width: 576px;
 		height: 381px;
 		padding: 50px 50px;
-		background-image: url("../images/modal-fondo4.jpg");
+		/*background-image: url("../images/modal-fondo4.jpg");*/
 	}
 	.seccion4 .imagenchic .lineas, .seccion4  .imagenamakela .lineas{
 		height: 20%;

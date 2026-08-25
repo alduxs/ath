@@ -77,6 +77,13 @@ if (isset($_GET["subseccion"])) {
 	</ul>
 </li>
 
+<li <?php if ($seccion=="modal"): ?>class="active"<?php endif; ?>>
+	<a href="#"><i class="fa fa-tasks"></i> <span class="nav-label">Modal</span> <span class="fa arrow"></span></a>
+	<ul class="nav nav-second-level collapse">
+		<li><a href="lstModal.php?seccion=modal">Listar</a></li>
+	</ul>
+</li>
+
 
 <li <?php if ($seccion=="usuarios"): ?>class="active"<?php endif; ?>>
 	<a href="#"><i class="fa fa-user"></i> <span class="nav-label">Usuarios</span> <span class="fa arrow"></span></a>
