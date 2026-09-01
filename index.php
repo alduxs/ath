@@ -216,6 +216,7 @@ shuffle($arrImagenes);
                         <div class="col-md-12 col-lg-7">
                             <h1>Tailor-made big game, dove,<br>and pigeon hunting experiences!</h1>
                             <!--<p class="p1">Also, exclusive free range red stag<br>hunting in Patagonia awaits. </p>-->
+                            <p class="p1">&nbsp;</p>
                             <p class="p2">Get in touch for detailed info,<br>rates and available spots.</p>
                         </div>
                         <div class="col-md-12 col-lg-8">
