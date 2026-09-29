@@ -49,31 +49,9 @@ shuffle($arrImagenes);
     </script>
     <!-- End Google Tag Manager -->
 
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-Z8RRLD5284"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
+    
 
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-        gtag('js', new Date());
-
-        gtag('config', 'G-Z8RRLD5284');
-    </script>
-
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-11201163425"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-        gtag('js', new Date());
-
-        gtag('config', 'AW-11201163425');
-    </script>
+    
 
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -91,8 +69,8 @@ shuffle($arrImagenes);
     <!-- Facebook -->
     <meta property="og:title" content="Argentina Top Hunts">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="http://argentinatophunts.com">
-    <meta property="og:image" content="http://argentinatophunts.com/assets/images/fb.jpg">
+    <meta property="og:url" content="https://argentinatophunts.com">
+    <meta property="og:image" content="https://argentinatophunts.com/assets/images/fb.jpg">
     <meta property="og:image:type" content="image/jpg">
     <meta property="og:image:width" content="500">
     <meta property="og:image:height" content="500">
@@ -125,31 +103,7 @@ shuffle($arrImagenes);
 
     <meta name="facebook-domain-verification" content="d29tvw8q1bjhrakh88a2iepl063nbz" />
 
-    <!-- Meta Pixel Code -->
-    <script>
-        ! function(f, b, e, v, n, t, s) {
-            if (f.fbq) return;
-            n = f.fbq = function() {
-                n.callMethod ?
-                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
-            };
-            if (!f._fbq) f._fbq = n;
-            n.push = n;
-            n.loaded = !0;
-            n.version = '2.0';
-            n.queue = [];
-            t = b.createElement(e);
-            t.async = !0;
-            t.src = v;
-            s = b.getElementsByTagName(e)[0];
-            s.parentNode.insertBefore(t, s)
-        }(window, document, 'script',
-            'https://connect.facebook.net/en_US/fbevents.js');
-        fbq('init', '1075701056894279');
-        fbq('track', 'PageView');
-    </script>
-    <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1075701056894279&ev=PageView&noscript=1" /></noscript>
-    <!-- End Meta Pixel Code -->
+    
 
 
 </head>
@@ -1108,7 +1062,7 @@ shuffle($arrImagenes);
                                 <a href="https://www.instagram.com/argentinatophunts/" target="_blank"><i class="fa-brands fa-instagram fa-2x"></i></a>
                             </div>
 
-                            <a href="http://www.argentinatophunts.com">www.argentinatophunts.com</a>
+                            <a href="https://www.argentinatophunts.com">www.argentinatophunts.com</a>
                             <div class="redes">
                                 <a href="https://www.facebook.com/argentinatophunts" target="_blank"><i class="fa-brands fa-facebook-f fa-2x"></i></a>
                                 <a href="https://www.instagram.com/argentinatophunts/" target="_blank"><i class="fa-brands fa-instagram fa-2x"></i></a>

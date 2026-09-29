@@ -13,25 +13,9 @@ include_once("includes/constantes.inc.php");
     })(window,document,'script','dataLayer','GTM-P5RNGHC');</script>
     <!-- End Google Tag Manager -->
 
-    <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-Z8RRLD5284"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
 
-  gtag('config', 'G-Z8RRLD5284');
-</script>
 
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=AW-11201163425"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
 
-  gtag('config', 'AW-11201163425');
-</script>
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -49,8 +33,8 @@ include_once("includes/constantes.inc.php");
   <!-- Facebook -->
   <meta property="og:title" content="Charity Program | Argentina Top Hunts">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="http://argentinatophunts.com">
-  <meta property="og:image" content="http://argentinatophunts.com/assets/images/fb.jpg">
+  <meta property="og:url" content="https://argentinatophunts.com">
+  <meta property="og:image" content="https://argentinatophunts.com/assets/images/fb.jpg">
   <meta property="og:image:type" content="image/jpg">
   <meta property="og:image:width" content="500">
   <meta property="og:image:height" content="500">
@@ -80,20 +64,7 @@ include_once("includes/constantes.inc.php");
   <!-- Estilos Custom -->
   <link href="assets/css/amakela.css?v=4" rel="stylesheet">
   
-  <script>
-    !function(f,b,e,v,n,t,s)
-    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-    n.queue=[];t=b.createElement(e);t.async=!0;
-    t.src=v;s=b.getElementsByTagName(e)[0];
-    s.parentNode.insertBefore(t,s)}(window, document,'script',
-    'https://connect.facebook.net/en_US/fbevents.js');
-    fbq('init', '1075701056894279');
-    fbq('track', 'PageView');
-  </script>
-  <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1075701056894279&ev=PageView&noscript=1" /></noscript>
-
+  
 </head>
 
 <body>
