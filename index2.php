@@ -1083,7 +1083,7 @@ shuffle($arrImagenes);
                                 <a href="https://www.instagram.com/argentinatophunts/" target="_blank"><i class="fa-brands fa-instagram fa-2x"></i></a>
                             </div>
 
-                            <a href="http:s//www.argentinatophunts.com">www.argentinatophunts.com</a>
+                            <a href="https://www.argentinatophunts.com">www.argentinatophunts.com</a>
                             <div class="redes">
                                 <a href="https://www.facebook.com/argentinatophunts" target="_blank"><i class="fa-brands fa-facebook-f fa-2x"></i></a>
                                 <a href="https://www.instagram.com/argentinatophunts/" target="_blank"><i class="fa-brands fa-instagram fa-2x"></i></a>

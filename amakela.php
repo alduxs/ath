@@ -192,7 +192,7 @@ $intQtyRecords = $rsImag->rowCount();
 
                             <div class="redmore">
                                 <div class="linea"></div>
-                                <div class="link"><a href="http:s//amakelalodge.com/" target="_blank">go to website</a> </div>
+                                <div class="link"><a href="https://amakelalodge.com/" target="_blank">go to website</a> </div>
                             </div>
 
 
