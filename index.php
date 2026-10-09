@@ -55,8 +55,8 @@ shuffle($arrImagenes);
     </script>
     <!-- End Google Tag Manager -->
 
-   
-  
+
+
 
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -110,7 +110,7 @@ shuffle($arrImagenes);
 
 
 
-    
+
     <!-- End Meta Pixel Code -->
 
     <style>
@@ -124,10 +124,11 @@ shuffle($arrImagenes);
             }
         }
 
-        .videocont2{
+        .videocont2 {
             position: relative;
         }
-         .videocont2 video{
+
+        .videocont2 video {
             position: absolute;
             top: 0;
             left: 0;
@@ -160,7 +161,7 @@ shuffle($arrImagenes);
             </div>
         </div>
     </div>
-    
+
     <!-- Modal para tomar datos de-email -->
     <div class="modal-g" style="display: none;" id="modalg">
         <div class="fondo-modal-black">
@@ -318,7 +319,11 @@ shuffle($arrImagenes);
                     <div class="row">
                         <div class="col-12">
                             <ul>
-                                <li id="bt-0">WHO WE ARE</li><li id="bt-1">OUR LODGES</li><li id="bt-4">PATAGONIA</li><li id="bt-2">WHY HUNT WITH US</li><li id="bt-3">OUR CHARITY PROGRAM</li>
+                                <li id="bt-0">WHO WE ARE</li>
+                                <li id="bt-1">OUR LODGES</li>
+                                <li id="bt-4">PATAGONIA</li>
+                                <li id="bt-2">WHY HUNT WITH US</li>
+                                <li id="bt-3">OUR CHARITY PROGRAM</li>
                             </ul>
                         </div>
                     </div>
@@ -596,12 +601,12 @@ shuffle($arrImagenes);
     -->
                                 <div class="col-md-4 p-0">
                                     <div class="videocont2" id="videocont1">
-                                        <video  autoplay="true" muted="true" loop="true" playsinline="" src="assets/video/bosque-bufalo.mp4" id="imgdec3"></video>
+                                        <video autoplay="true" muted="true" loop="true" playsinline="" src="assets/video/bosque-bufalo.mp4" id="imgdec3"></video>
                                     </div>
-                                   
+
                                 </div>
 
-    
+
                             </div>
 
                         </div>
@@ -660,11 +665,11 @@ shuffle($arrImagenes);
                         <div class="col-md-12 anim5">
                             <div class="row">
 
-                                 <div class="col-md-4 p-0">
+                                <div class="col-md-4 p-0">
                                     <div class="videocont2" id="videocont2">
-                                        <video  autoplay="true" muted="true" loop="true" playsinline="" src="assets/video/caza-jeep.mp4" id="imgdec7"></video>
+                                        <video autoplay="true" muted="true" loop="true" playsinline="" src="assets/video/caza-jeep.mp4" id="imgdec7"></video>
                                     </div>
-                                    
+
                                 </div>
 
                                 <!--
@@ -680,16 +685,16 @@ shuffle($arrImagenes);
 
                                     </div>
                                 </div>
-                                
+
                                 <div class="col-md-4 p-0">
                                     <div class="imagen-dec2" style="background-image: url('assets/images/amakela/imag04.jpg');">
 
                                     </div>
                                 </div>
 
-                               
 
-                                
+
+
 
                             </div>
 
@@ -724,30 +729,30 @@ shuffle($arrImagenes);
             <div class="container">
 
                 <div class="row">
-                    
-                     <div class="col-12 offset-lg-1 col-lg-10">
-                        <h1>WE’RE EXCITED TO SHARE A FEW WORDS FROM SOME OF OUR HUNTERS AND GIVE YOU<br>A GLIMPSE OF WHAT THE EXPERIENCE HAS BEEN LIKE THIS 2026 SEASON!</h1>
-                     </div>
 
-                     <div class="col-12 offset-lg-1 col-lg-10">
+                    <div class="col-12 offset-lg-1 col-lg-10">
+                        <h1>WE’RE EXCITED TO SHARE A FEW WORDS FROM SOME OF OUR HUNTERS AND GIVE YOU<br>A GLIMPSE OF WHAT THE EXPERIENCE HAS BEEN LIKE THIS 2026 SEASON!</h1>
+                    </div>
+
+                    <div class="col-12 offset-lg-1 col-lg-10">
                         <?php
                         $contador = 0;
                         $contadorClass = 1;
                         ?>
                         <?php while ($arrContenido = $rsContfd->fetch(PDO::FETCH_BOTH)) { ?>
-                        <?php
+                            <?php
                             $string = $arrContenido["fd_nombre"];
                             $stringArray = explode(",", $string);
                             $nombre = $stringArray[0];
                             $lodge = $stringArray[1];
                             $month = $stringArray[2];
 
-                            if($contadorClass % 2 == 0){
+                            if ($contadorClass % 2 == 0) {
                                 $clase = "contenedor-coment-reverse";
                             } else {
                                 $clase = "contenedor-coment";
                             }
-                        ?>
+                            ?>
                             <!-- COMENTARIO -->
                             <div class="<?= $clase ?>">
                                 <div class="bloque-coment">
@@ -761,17 +766,17 @@ shuffle($arrImagenes);
                                 </div>
                             </div>
                             <!-- COMENTARIO -->
-                             <?php
-                                if($contador == 2){
-                                    $contador = 0;
-                                } else {
-                                    $contador = $contador + 1;
-                                }
-                                $contadorClass = $contadorClass + 1;
-                             ?>
-                         <?php } ?>
+                            <?php
+                            if ($contador == 2) {
+                                $contador = 0;
+                            } else {
+                                $contador = $contador + 1;
+                            }
+                            $contadorClass = $contadorClass + 1;
+                            ?>
+                        <?php } ?>
 
-                         <!--
+                        <!--
 
                         
                         <div class="contenedor-coment-reverse">
@@ -811,7 +816,7 @@ shuffle($arrImagenes);
                         </div>
                        -->
 
-                     </div>
+                    </div>
 
                 </div>
 
@@ -882,7 +887,7 @@ shuffle($arrImagenes);
         </section>
         <!-- FIN COMENTARIOS -->
 
-        
+
 
         <!-- MAIN SPONSORS -->
         <section class="seccion13">
@@ -1072,52 +1077,73 @@ shuffle($arrImagenes);
             <div class="halfbloque1">
                 <div class="container-fluid">
 
-                    <div class="col-lg-10 offset-lg-2 col-xl-7 offset-xl-5">
-                        <h1>CONTACT</h1>
-                        <h2>CONCIERGE SERVICES</h2>
-                        <p>We make tailored packages for each hunting group.</p>
-                        <p>We can organize all the services you desire from your arrival until your departure from the country. These services include:</p>
-                        <ul>
-                            <li>Domestic flights roundtrip to the lodges</li>
-                            <li>Ground transfers roundtrip the airports</li>
-                            <li>Hotels in Buenos Aires, restaurant reservations, private guide tours, shopping tours, tango shows</li>
-                            <li>3/4 day trip anywhere in Argentina</li>
-                        </ul>
-                        <p><strong>If you have any questions or want to get in touch with us, don’t hesitate to contact us!</strong></p>
-                        <div class="logo-footer">
-                            <img src="assets/images/logo-footer.svg" alt="" class="logo-footer-vec">
-                        </div>
-                        <div class="bloque-contacto border-contacto">
-                            <div class="info">
-                                <p class="nombre">Federico C. Clausen</p>
-                                <p class="cargo">CEO & Founder</p>
-                                <a href="mailto:federico@argentinatophunts.com">federico@argentinatophunts.com</a>
-                            </div>
-                        </div>
+                    <div class="row">
 
-                        <div class="bloque-contacto ">
-                            <div class="info">
-                                <p class="nombre">Cecilia Clausen</p>
-                                <p class="cargo">Sales Department & Concierge Services</p>
-                                <a href="mailto:info@argentinatophunts.com">info@argentinatophunts.com</a>
-                            </div>
-                        </div>
+                        <div class="col-lg-10 offset-lg-2 col-xl-10 offset-xl-2">
 
-                        <div class="redes-footer">
+                            <div class="row">
 
-                            <div class="redes2">
-                                <a href="https://www.facebook.com/argentinatophunts" target="_blank"><i class="fa-brands fa-facebook-f fa-2x"></i></a>
-                                <a href="https://www.instagram.com/argentinatophunts/" target="_blank"><i class="fa-brands fa-instagram fa-2x"></i></a>
+                                <div class="col-xl-6">
+
+                                    <h1>CONTACT</h1>
+                                    <h2>CONCIERGE SERVICES</h2>
+                                    <p>We make tailored packages for each hunting group.</p>
+                                    <p>We can organize all the services you desire from your arrival until your departure from the country. These services include:</p>
+                                    <ul>
+                                        <li>Domestic flights roundtrip to the lodges</li>
+                                        <li>Ground transfers roundtrip the airports</li>
+                                        <li>Hotels in Buenos Aires, restaurant reservations, private guide tours, shopping tours, tango shows</li>
+                                        <li>3/4 day trip anywhere in Argentina</li>
+                                    </ul>
+                                    <p><strong>If you have any questions or want to get in touch with us, don’t hesitate to contact us!</strong></p>
+                                    <div class="logo-footer">
+                                        <img src="assets/images/logo-footer.svg" alt="" class="logo-footer-vec">
+                                    </div>
+                                    <div class="bloque-contacto border-contacto">
+                                        <div class="info">
+                                            <p class="nombre">Federico C. Clausen</p>
+                                            <p class="cargo">CEO & Founder</p>
+                                            <a href="mailto:federico@argentinatophunts.com">federico@argentinatophunts.com</a>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+
                             </div>
 
-                            <a href="https://www.argentinatophunts.com">www.argentinatophunts.com</a>
-                            <div class="redes">
-                                <a href="https://www.facebook.com/argentinatophunts" target="_blank"><i class="fa-brands fa-facebook-f fa-2x"></i></a>
-                                <a href="https://www.instagram.com/argentinatophunts/" target="_blank"><i class="fa-brands fa-instagram fa-2x"></i></a>
+
+
+
+
+
+                            <div class="bloque-contacto ">
+                                <div class="info">
+                                    <p class="nombre">Cecilia Clausen</p>
+                                    <p class="cargo">Sales Department & Concierge Services</p>
+                                    <a href="mailto:info@argentinatophunts.com">info@argentinatophunts.com</a>
+                                </div>
                             </div>
+
+                            <div class="redes-footer">
+
+                                <div class="redes2">
+                                    <a href="https://www.facebook.com/argentinatophunts" target="_blank"><i class="fa-brands fa-facebook-f fa-2x"></i></a>
+                                    <a href="https://www.instagram.com/argentinatophunts/" target="_blank"><i class="fa-brands fa-instagram fa-2x"></i></a>
+                                </div>
+
+                                <a href="https://www.argentinatophunts.com">www.argentinatophunts.com</a>
+                                <div class="redes">
+                                    <a href="https://www.facebook.com/argentinatophunts" target="_blank"><i class="fa-brands fa-facebook-f fa-2x"></i></a>
+                                    <a href="https://www.instagram.com/argentinatophunts/" target="_blank"><i class="fa-brands fa-instagram fa-2x"></i></a>
+                                </div>
+                            </div>
+
                         </div>
 
                     </div>
+
+
                 </div>
 
             </div>
@@ -1259,7 +1285,7 @@ shuffle($arrImagenes);
             $(".videocont1").width(tamanioHorizontalImagen).height(tamanioVerticalImagen);
 
             $("#imgdec3").width(tamanioHorizontalImagen).height(tamanioVerticalImagen);
-            $("#imgdec7").width(tamanioHorizontalImagen).height(tamanioVerticalImagen) ;
+            $("#imgdec7").width(tamanioHorizontalImagen).height(tamanioVerticalImagen);
 
 
         });
