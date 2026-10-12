@@ -1521,6 +1521,74 @@ h2{
 	background-repeat: no-repeat;
   	background-position: center;
 }
+.formulario .contact-field-error{
+	display: block;
+	margin: 0 0 6px;
+	color: #ffb49d;
+	font-size: 0.85rem;
+}
+.formulario input.contact-invalid,
+.formulario textarea.contact-invalid{
+	border-bottom-color: #ff8066;
+}
+.formulario .send:disabled{
+	cursor: wait;
+	opacity: 0.65;
+}
+
+.contact-feedback{
+	position: fixed;
+	inset: 0;
+	z-index: 3000;
+	display: none;
+	align-items: center;
+	justify-content: center;
+	padding: 20px;
+	background: rgba(0, 0, 0, 0.72);
+}
+.contact-feedback.is-visible{
+	display: flex;
+}
+.contact-feedback__panel{
+	position: relative;
+	width: 100%;
+	max-width: 480px;
+	padding: 36px;
+	color: #fff;
+	background: #202321;
+	border: 1px solid rgba(255, 255, 255, 0.25);
+	box-shadow: 0 12px 40px rgba(0, 0, 0, 0.4);
+}
+.contact-feedback__panel h2{
+	margin: 0 32px 16px 0;
+	color: #d77b47;
+	font-size: 1.35rem;
+}
+.contact-feedback__panel p{
+	margin: 0 0 16px;
+}
+.contact-feedback__panel ul{
+	margin-bottom: 20px;
+	padding-left: 20px;
+}
+.contact-feedback__close{
+	position: absolute;
+	top: 8px;
+	right: 12px;
+	padding: 0;
+	color: #fff;
+	background: transparent;
+	border: 0;
+	font-size: 28px;
+	line-height: 1;
+}
+.contact-feedback__confirm{
+	padding: 8px 24px;
+	color: #fff;
+	background: #d77b47;
+	border: 0;
+	cursor: pointer;
+}
 
 
 @media (min-width: 480px) {
