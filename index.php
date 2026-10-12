@@ -319,11 +319,7 @@ shuffle($arrImagenes);
                     <div class="row">
                         <div class="col-12">
                             <ul>
-                                <li id="bt-0">WHO WE ARE</li>
-                                <li id="bt-1">OUR LODGES</li>
-                                <li id="bt-4">PATAGONIA</li>
-                                <li id="bt-2">WHY HUNT WITH US</li>
-                                <li id="bt-3">OUR CHARITY PROGRAM</li>
+                                <li id="bt-0">WHO WE ARE</li><li id="bt-1">OUR LODGES</li><li id="bt-4">PATAGONIA</li><li id="bt-2">WHY HUNT WITH US</li><li id="bt-3">OUR CHARITY PROGRAM</li>
                             </ul>
                         </div>
                     </div>
@@ -1083,60 +1079,123 @@ shuffle($arrImagenes);
 
                             <div class="row">
 
-                                <div class="col-xl-6">
+                                <div class="col-12">
+                                    <h1>CONTACT US</h1>
+                                </div>
 
-                                    <h1>CONTACT</h1>
-                                    <h2>CONCIERGE SERVICES</h2>
-                                    <p>We make tailored packages for each hunting group.</p>
-                                    <p>We can organize all the services you desire from your arrival until your departure from the country. These services include:</p>
-                                    <ul>
-                                        <li>Domestic flights roundtrip to the lodges</li>
-                                        <li>Ground transfers roundtrip the airports</li>
-                                        <li>Hotels in Buenos Aires, restaurant reservations, private guide tours, shopping tours, tango shows</li>
-                                        <li>3/4 day trip anywhere in Argentina</li>
-                                    </ul>
-                                    <p><strong>If you have any questions or want to get in touch with us, don’t hesitate to contact us!</strong></p>
-                                    <div class="logo-footer">
-                                        <img src="assets/images/logo-footer.svg" alt="" class="logo-footer-vec">
-                                    </div>
-                                    <div class="bloque-contacto border-contacto">
-                                        <div class="info">
-                                            <p class="nombre">Federico C. Clausen</p>
-                                            <p class="cargo">CEO & Founder</p>
-                                            <a href="mailto:federico@argentinatophunts.com">federico@argentinatophunts.com</a>
+                                <div class="col-12">
+                                    <div class="row">
+
+                                        <div class="col-xl-6">
+
+
+                                            <h2>CONCIERGE SERVICES</h2>
+                                            <p>We make tailored packages for each hunting group.</p>
+                                            <p>We can organize all the services you desire from your arrival until your departure from the country. These services include:</p>
+                                            <ul>
+                                                <li>Domestic flights roundtrip to the lodges</li>
+                                                <li>Ground transfers roundtrip the airports</li>
+                                                <li>Hotels in Buenos Aires, restaurant reservations, private guide tours, shopping tours, tango shows</li>
+                                                <li>3/4 day trip anywhere in Argentina</li>
+                                            </ul>
+                                            <p><strong>If you have any questions or want to get in touch with us, don’t hesitate to contact us!</strong></p>
+
+
+
                                         </div>
+
+                                        <div class="col-xl-6">
+
+                                            <div class="formulario">
+                                                <form id="commentForm" method="post" action="envio.php">
+                                                    <div class="row">
+                                                        <div class="col-12">
+                                                            <input type="text" name="nombre" id="nombre" placeholder="Name">
+                                                        </div>
+                                                        <div class="col-12">
+                                                            <input type="text" name="country" id="country" placeholder="Country">
+                                                        </div>
+                                                        <div class="col-12">
+                                                            <input type="text" name="emailm" id="emailm" placeholder="Email">
+                                                        </div>
+                                                        <div class="col-12">
+                                                            <input type="text" name="phonenumber" id="phonenumber" placeholder="Phone Number">
+                                                        </div>
+                                                        <div class="col-12">
+                                                            <textarea name="mensaje" id="mensaje" cols="30" rows="5" placeholder="Message"></textarea>
+                                                        </div>
+                                                        <div class="col-12 text-end mt-2">
+                                                            <button type="submit" class="send">SEND</button>
+                                                        </div>
+
+                                                    </div>
+                                                </form>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <div class="col-12 mt-5">
+
+                                    <div class="row">
+                                        <div class="col-lg-6">
+
+                                            <div class="bloque-contacto border-contacto">
+                                                <div class="info">
+                                                    <p class="nombre">Federico C. Clausen</p>
+                                                    <p class="cargo">CEO & Founder</p>
+                                                    <a href="mailto:federico@argentinatophunts.com">federico@argentinatophunts.com</a>
+                                                </div>
+                                            </div>
+
+                                            <div class="bloque-contacto ">
+                                                <div class="info">
+                                                    <p class="nombre">Cecilia Clausen</p>
+                                                    <p class="cargo">Sales Department & Concierge Services</p>
+                                                    <a href="mailto:info@argentinatophunts.com">info@argentinatophunts.com</a>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="col-lg-6">
+
+                                            <div class="row">
+                                                <div class="col-12">
+                                                    <div class="logo-footer">
+                                                        <img src="assets/images/logo-footer.svg" alt="" class="logo-footer-vec">
+                                                    </div>
+                                                </div>
+                                                <div class="col-12">
+
+                                                    <div class="redes-footer">
+
+                                                        <div class="redes2">
+                                                            <a href="https://www.facebook.com/argentinatophunts" target="_blank"><i class="fa-brands fa-facebook-f fa-2x"></i></a>
+                                                            <a href="https://www.instagram.com/argentinatophunts/" target="_blank"><i class="fa-brands fa-instagram fa-2x"></i></a>
+                                                        </div>
+
+                                                        <a href="https://www.argentinatophunts.com">www.argentinatophunts.com</a>
+                                                        <div class="redes">
+                                                            <a href="https://www.facebook.com/argentinatophunts" target="_blank"><i class="fa-brands fa-facebook-f fa-2x"></i></a>
+                                                            <a href="https://www.instagram.com/argentinatophunts/" target="_blank"><i class="fa-brands fa-instagram fa-2x"></i></a>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+
                                     </div>
 
                                 </div>
 
 
-                            </div>
 
-
-
-
-
-
-                            <div class="bloque-contacto ">
-                                <div class="info">
-                                    <p class="nombre">Cecilia Clausen</p>
-                                    <p class="cargo">Sales Department & Concierge Services</p>
-                                    <a href="mailto:info@argentinatophunts.com">info@argentinatophunts.com</a>
-                                </div>
-                            </div>
-
-                            <div class="redes-footer">
-
-                                <div class="redes2">
-                                    <a href="https://www.facebook.com/argentinatophunts" target="_blank"><i class="fa-brands fa-facebook-f fa-2x"></i></a>
-                                    <a href="https://www.instagram.com/argentinatophunts/" target="_blank"><i class="fa-brands fa-instagram fa-2x"></i></a>
-                                </div>
-
-                                <a href="https://www.argentinatophunts.com">www.argentinatophunts.com</a>
-                                <div class="redes">
-                                    <a href="https://www.facebook.com/argentinatophunts" target="_blank"><i class="fa-brands fa-facebook-f fa-2x"></i></a>
-                                    <a href="https://www.instagram.com/argentinatophunts/" target="_blank"><i class="fa-brands fa-instagram fa-2x"></i></a>
-                                </div>
                             </div>
 
                         </div>
