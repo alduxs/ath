@@ -46,9 +46,9 @@ if ($intQtyRecords == 0) {
 
 	$mail->From = 'enviador@amakelalodge.com';
 	$mail->FromName = 'ATH Web';
-	//$mail->addAddress('info@argentinatophunts.com');     // Add a recipient
-	//$mail->addAddress('federico@argentinatophunts.com');     // Add a recipient
-	$mail->addAddress('agi.iniguez@gmail.com');
+	$mail->addAddress('info@argentinatophunts.com');     // Add a recipient
+	$mail->addAddress('federico@argentinatophunts.com');     // Add a recipient
+	//$mail->addAddress('agi.iniguez@gmail.com');
 	$mail->addReplyTo($email);
 
 	$mail->isHTML(true);

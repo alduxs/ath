@@ -89,8 +89,8 @@ $smtpHost = 'c2421359.ferozo.com';
 $smtpUsername = 'enviador@amakelalodge.com';
 $smtpPassword = '@2svQ5g2vN';
 $smtpFrom = 'enviador@amakelalodge.com';
-//$recipientList = 'info@argentinatophunts.com,federico@argentinatophunts.com';
-$recipientList = 'agi.iniguez@gmail.com';
+$recipientList = 'info@argentinatophunts.com,federico@argentinatophunts.com,agi.iniguez@gmail.com';
+//$recipientList = 'agi.iniguez@gmail.com';
 $recipients = array_filter(array_map('trim', explode(',', $recipientList)));
 
           
