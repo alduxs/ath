@@ -7,7 +7,7 @@ $link = Conectarse();
 //
 $objContenido = new General();
 //
-$query = "SELECT * FROM feedback WHERE fd_publicado = 1 ORDER BY fd_posicion ASC";
+$query = "SELECT * FROM feedback WHERE fd_publicado = 1 AND fd_destacado = 0 ORDER BY fd_posicion ASC";
 $rsCont = $objContenido->getAllContenido($link, $query);
 $intQtyRecords = $rsCont->rowCount();
 //FEEDBACK DESTACADOS
@@ -17,6 +17,12 @@ $intQtyRecordsfd = $rsContfd->rowCount();
 //PATAGONIA
 $query = "SELECT * FROM patagonia WHERE publicado = 1 ORDER BY id ASC";
 $rsContPatagonia = $objContenido->getAllContenido($link, $query);
+
+//MODAL
+$query = "SELECT * FROM modal WHERE modal_id = 1";
+$rsContModal = $objContenido->getAllContenido($link, $query);
+$arrContenidoModal = $rsContModal->fetch(PDO::FETCH_BOTH);
+//var_dump($arrContenidoModal);exit();
 
 // Arreglos
 $arrImagenes = array(
@@ -49,9 +55,8 @@ shuffle($arrImagenes);
     </script>
     <!-- End Google Tag Manager -->
 
-    
 
-   
+
 
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -105,17 +110,29 @@ shuffle($arrImagenes);
 
 
 
-    
+
+    <!-- End Meta Pixel Code -->
 
     <style>
-        .videocont2{
+        .modal-p {
+            background-image: var(--modal-image);
+        }
+
+        @media (max-width: 575.98px) {
+            .modal-p {
+                background-image: var(--modal-image-mobile);
+            }
+        }
+
+        .videocont2 {
             position: relative;
         }
-         .videocont2 video{
+
+        .videocont2 video {
             position: absolute;
             top: 0;
             left: 0;
-            width: 220%;
+            width: 100%;
             height: auto;
             object-fit: cover;
         }
@@ -144,16 +161,17 @@ shuffle($arrImagenes);
             </div>
         </div>
     </div>
-    
+
     <!-- Modal para tomar datos de-email -->
     <div class="modal-g" style="display: none;" id="modalg">
         <div class="fondo-modal-black">
-            <div class="modal-p">
+            <div class="modal-p" style="--modal-image: url('assets/images/<?php echo $arrContenidoModal['modal_image']; ?>'); --modal-image-mobile: url('assets/images/<?php echo $arrContenidoModal['modal_image_rp']; ?>');">
                 <div class="row">
                     <div id="cont1">
                         <div class="col-md-12 col-lg-7">
                             <h1>Tailor-made big game, dove,<br>and pigeon hunting experiences!</h1>
-                            <p class="p1">Also, exclusive free range red stag<br>hunting in Patagonia awaits. </p>
+                            <!--<p class="p1">Also, exclusive free range red stag<br>hunting in Patagonia awaits. </p>-->
+                            <p class="p1">&nbsp;</p>
                             <p class="p2">Get in touch for detailed info,<br>rates and available spots.</p>
                         </div>
                         <div class="col-md-12 col-lg-8">
@@ -458,11 +476,15 @@ shuffle($arrImagenes);
             <div class="bloque1">
                 <div class="owl-carousel owl3">
 
-                    <div class="item slider1" style="background-image: url('assets/slides/foto-fondo-01.jpg');">
+                    <div class="item slider1" style="background-image: url('assets/slides/foto-fondo-011.jpg');">
 
                     </div>
 
-                    <div class="item slider2" style="background-image: url('assets/slides/foto-fondo-02.jpg');">
+                    <div class="item slider2" style="background-image: url('assets/slides/foto-fondo-012.jpg');">
+
+                    </div>
+
+                    <div class="item slider2" style="background-image: url('assets/slides/foto-fondo-013.jpg');">
 
                     </div>
 
@@ -477,23 +499,24 @@ shuffle($arrImagenes);
 
                 <div class="row">
                     <div class="col-12">
-                        <p class="cintillo">PILOLIL LODGE</p>
-                        <h1>Your ultimate free-range red stag<br>hunting experience in PATAGONIA.</h1>
+                        <h1>Your ultimate free-range red stag<br>hunting experience in <span style="background-image: url('assets/images/subrrayado-patagonia.png');display: inline-flex;background-repeat: no-repeat;background-position: center bottom;padding: 0px 0px 10px 0px;">PATAGONIA</span>.</h1>
                     </div>
 
                     <div class="col-12 col-md-6 col-lg-5 offset-lg-1 separacioncolumna">
-                        <p class="texto txt-bold">At PILOLIL Lodge, across 24,700 acres of pure Patagonian landscape, you’ll discover natural habitats where powerful free-range red stags roam freely in the hunting season from mid-March to mid-April.</p>
+                        <p class="texto txt-bold separacionparrafo">Our PATAGONIA delivers an experience like no other!</p>
+                        <p class="texto txt-bold ">HUNT FREE-RANGE red stags across Patagonia's open landscapes during the hunting season from mid-March to mid-April.</p>
                     </div>
 
                     <div class="col-12 col-md-6 col-lg-5">
-                        <p class="texto txt-bold separacionparrafo">Open spots for the 2026 and 2027 Seasons</p>
-                        <p class="texto separacionparrafo">You can also enjoy world-class fly fishing and outdoor adventures like horseback riding and trekking. Every experience is fully tailor-made.</p>
-                        <p class="texto-contacto"> <a href="mailto:info@argentinatophunts.com">Contact us anytime for more information!</a></p>
+                        <p class="texto separacionparrafo">You can also enjoy world-class FLY FISHING and OUTDOOR ACTIVITIES like horseback riding and trekking. Every experience is fully tailor-made.</p>
+                        <p class="texto-contacto"> <a href="mailto:info@argentinatophunts.com"><span style="background-image: url('assets/images/subrayado-contact.png');display: inline-flex;background-position: 3px center;background-repeat: no-repeat;padding: 10px 4px 10px 10px;background-size: 100%;">Contact us</span> anytime for more information!</a></p>
 
+                        <!--
                         <div class="redmore">
                             <div class="linea"></div>
                             <div class="link"><a href="#" id="readpatagonia">read more</a> </div>
                         </div>
+    -->
 
                         <ul class="ulpdfpatagonia">
                             <?php while ($arrContenidoPatagonia = $rsContPatagonia->fetch(PDO::FETCH_BOTH)) { ?>
@@ -574,12 +597,12 @@ shuffle($arrImagenes);
     -->
                                 <div class="col-md-4 p-0">
                                     <div class="videocont2" id="videocont1">
-                                        <video  autoplay="true" muted="true" loop="true" playsinline="" src="assets/video/bosque-bufalo.mp4" id="imgdec3"></video>
+                                        <video autoplay="true" muted="true" loop="true" playsinline="" src="assets/video/bosque-bufalo.mp4" id="imgdec3"></video>
                                     </div>
-                                   
+
                                 </div>
 
-    
+
                             </div>
 
                         </div>
@@ -637,32 +660,37 @@ shuffle($arrImagenes);
 
                         <div class="col-md-12 anim5">
                             <div class="row">
+
+                                <div class="col-md-4 p-0">
+                                    <div class="videocont2" id="videocont2">
+                                        <video autoplay="true" muted="true" loop="true" playsinline="" src="assets/video/caza-jeep.mp4" id="imgdec7"></video>
+                                    </div>
+
+                                </div>
+
+                                <!--
+
                                 <div class="col-md-4 p-0">
                                     <div class="imagen-dec2" style="background-image: url('assets/images/amakela/imag02.jpg');">
 
                                     </div>
-                                </div>
+                                </div>-->
 
                                 <div class="col-md-4 p-0">
                                     <div class="imagen-dec2" style="background-image: url('assets/images/amakela/imag03.jpg');">
 
                                     </div>
                                 </div>
-                                <!--
+
                                 <div class="col-md-4 p-0">
                                     <div class="imagen-dec2" style="background-image: url('assets/images/amakela/imag04.jpg');">
 
                                     </div>
-                                </div>-->
-
-                                <div class="col-md-4 p-0">
-                                    <div class="videocont2" id="videocont2">
-                                        <video  autoplay="true" muted="true" loop="true" playsinline="" src="assets/video/caza-jeep.mp4" id="imgdec7"></video>
-                                    </div>
-                                    
                                 </div>
 
-                                
+
+
+
 
                             </div>
 
@@ -697,30 +725,30 @@ shuffle($arrImagenes);
             <div class="container">
 
                 <div class="row">
-                    
-                     <div class="col-12 offset-lg-1 col-lg-10">
-                        <h1>WE’RE EXCITED TO SHARE A FEW WORDS FROM SOME OF OUR HUNTERS AND GIVE YOU<br>A GLIMPSE OF WHAT THE EXPERIENCE HAS BEEN LIKE THIS 2026 SEASON!</h1>
-                     </div>
 
-                     <div class="col-12 offset-lg-1 col-lg-10">
+                    <div class="col-12 offset-lg-1 col-lg-10">
+                        <h1>WE’RE EXCITED TO SHARE A FEW WORDS FROM SOME OF OUR HUNTERS AND GIVE YOU<br>A GLIMPSE OF WHAT THE EXPERIENCE HAS BEEN LIKE THIS 2026 SEASON!</h1>
+                    </div>
+
+                    <div class="col-12 offset-lg-1 col-lg-10">
                         <?php
                         $contador = 0;
                         $contadorClass = 1;
                         ?>
                         <?php while ($arrContenido = $rsContfd->fetch(PDO::FETCH_BOTH)) { ?>
-                        <?php
+                            <?php
                             $string = $arrContenido["fd_nombre"];
                             $stringArray = explode(",", $string);
                             $nombre = $stringArray[0];
                             $lodge = $stringArray[1];
                             $month = $stringArray[2];
 
-                            if($contadorClass % 2 == 0){
+                            if ($contadorClass % 2 == 0) {
                                 $clase = "contenedor-coment-reverse";
                             } else {
                                 $clase = "contenedor-coment";
                             }
-                        ?>
+                            ?>
                             <!-- COMENTARIO -->
                             <div class="<?= $clase ?>">
                                 <div class="bloque-coment">
@@ -734,17 +762,17 @@ shuffle($arrImagenes);
                                 </div>
                             </div>
                             <!-- COMENTARIO -->
-                             <?php
-                                if($contador == 2){
-                                    $contador = 0;
-                                } else {
-                                    $contador = $contador + 1;
-                                }
-                                $contadorClass = $contadorClass + 1;
-                             ?>
-                         <?php } ?>
+                            <?php
+                            if ($contador == 2) {
+                                $contador = 0;
+                            } else {
+                                $contador = $contador + 1;
+                            }
+                            $contadorClass = $contadorClass + 1;
+                            ?>
+                        <?php } ?>
 
-                         <!--
+                        <!--
 
                         
                         <div class="contenedor-coment-reverse">
@@ -784,7 +812,7 @@ shuffle($arrImagenes);
                         </div>
                        -->
 
-                     </div>
+                    </div>
 
                 </div>
 
@@ -855,7 +883,7 @@ shuffle($arrImagenes);
         </section>
         <!-- FIN COMENTARIOS -->
 
-        
+
 
         <!-- MAIN SPONSORS -->
         <section class="seccion13">
@@ -971,7 +999,7 @@ shuffle($arrImagenes);
                             </div>
 
                             <div class="bloque">
-                                <p><strong>If you’re a charity or nonprofit looking for silent auction ideas or you want more information about the program please contact us! info@argentinatophunts.com</astrong>
+                                <p><strong>If you’re a charity or nonprofit looking for silent auction ideas or you want more information about the program please contact us! info@argentinatophunts.com</strong>
                                 </p>
                             </div>
 
@@ -1045,52 +1073,136 @@ shuffle($arrImagenes);
             <div class="halfbloque1">
                 <div class="container-fluid">
 
-                    <div class="col-lg-10 offset-lg-2 col-xl-7 offset-xl-5">
-                        <h1>CONTACT</h1>
-                        <h2>CONCIERGE SERVICES</h2>
-                        <p>We make tailored packages for each hunting group.</p>
-                        <p>We can organize all the services you desire from your arrival until your departure from the country. These services include:</p>
-                        <ul>
-                            <li>Domestic flights roundtrip to the lodges</li>
-                            <li>Ground transfers roundtrip the airports</li>
-                            <li>Hotels in Buenos Aires, restaurant reservations, private guide tours, shopping tours, tango shows</li>
-                            <li>3/4 day trip anywhere in Argentina</li>
-                        </ul>
-                        <p><strong>If you have any questions or want to get in touch with us, don’t hesitate to contact us!</strong></p>
-                        <div class="logo-footer">
-                            <img src="assets/images/logo-footer.svg" alt="" class="logo-footer-vec">
-                        </div>
-                        <div class="bloque-contacto border-contacto">
-                            <div class="info">
-                                <p class="nombre">Federico C. Clausen</p>
-                                <p class="cargo">CEO & Founder</p>
-                                <a href="mailto:federico@argentinatophunts.com">federico@argentinatophunts.com</a>
-                            </div>
-                        </div>
+                    <div class="row">
 
-                        <div class="bloque-contacto ">
-                            <div class="info">
-                                <p class="nombre">Cecilia Clausen</p>
-                                <p class="cargo">Sales Department & Concierge Services</p>
-                                <a href="mailto:info@argentinatophunts.com">info@argentinatophunts.com</a>
-                            </div>
-                        </div>
+                        <div class="col-lg-10 offset-lg-2 col-xl-10 offset-xl-2">
 
-                        <div class="redes-footer">
+                            <div class="row">
 
-                            <div class="redes2">
-                                <a href="https://www.facebook.com/argentinatophunts" target="_blank"><i class="fa-brands fa-facebook-f fa-2x"></i></a>
-                                <a href="https://www.instagram.com/argentinatophunts/" target="_blank"><i class="fa-brands fa-instagram fa-2x"></i></a>
+                                <div class="col-12">
+                                    <h1>CONTACT US</h1>
+                                </div>
+
+                                <div class="col-12">
+                                    <div class="row">
+
+                                        <div class="col-xl-6">
+
+
+                                            <h2>CONCIERGE SERVICES</h2>
+                                            <p>We make tailored packages for each hunting group.</p>
+                                            <p>We can organize all the services you desire from your arrival until your departure from the country. These services include:</p>
+                                            <ul>
+                                                <li>Domestic flights roundtrip to the lodges</li>
+                                                <li>Ground transfers roundtrip the airports</li>
+                                                <li>Hotels in Buenos Aires, restaurant reservations, private guide tours, shopping tours, tango shows</li>
+                                                <li>3/4 day trip anywhere in Argentina</li>
+                                            </ul>
+                                            <p><strong>If you have any questions or want to get in touch with us, don’t hesitate to contact us!</strong></p>
+
+
+
+                                        </div>
+
+                                        <div class="col-xl-6">
+
+                                            <div class="formulario">
+                                                <form id="contactForm" method="post" action="envio-contacto.php" novalidate>
+                                                    <div class="row">
+                                                        <div class="col-12">
+                                                            <input type="text" name="nombre" id="contactName" placeholder="Name" required maxlength="100">
+                                                        </div>
+                                                        <div class="col-12">
+                                                            <input type="text" name="country" id="contactCountry" placeholder="Country" required maxlength="100">
+                                                        </div>
+                                                        <div class="col-12">
+                                                            <input type="email" name="emailm" id="contactEmail" placeholder="Email" required maxlength="254">
+                                                        </div>
+                                                        <div class="col-12">
+                                                            <input type="tel" name="phonenumber" id="contactPhone" placeholder="Phone Number" required maxlength="25">
+                                                        </div>
+                                                        <div class="col-12">
+                                                            <textarea name="mensaje" id="contactMessage" cols="30" rows="5" placeholder="Message" required maxlength="5000"></textarea>
+                                                        </div>
+                                                        <div class="col-12 text-end mt-2">
+                                                            <button type="submit" class="send">SEND</button>
+                                                        </div>
+
+                                                    </div>
+                                                </form>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <div class="col-12 mt-5">
+
+                                    <div class="row">
+                                        <div class="col-lg-6">
+
+                                            <div class="bloque-contacto border-contacto">
+                                                <div class="info">
+                                                    <p class="nombre">Federico C. Clausen</p>
+                                                    <p class="cargo">CEO & Founder</p>
+                                                    <a href="mailto:federico@argentinatophunts.com">federico@argentinatophunts.com</a>
+                                                </div>
+                                            </div>
+
+                                            <div class="bloque-contacto ">
+                                                <div class="info">
+                                                    <p class="nombre">Cecilia Clausen</p>
+                                                    <p class="cargo">Sales Department & Concierge Services</p>
+                                                    <a href="mailto:info@argentinatophunts.com">info@argentinatophunts.com</a>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="col-lg-6">
+
+                                            <div class="row">
+                                                <div class="col-12">
+                                                    <div class="logo-footer">
+                                                        <img src="assets/images/logo-footer.svg" alt="" class="logo-footer-vec">
+                                                    </div>
+                                                </div>
+                                                <div class="col-12">
+
+                                                    <div class="redes-footer">
+
+                                                        <div class="redes2">
+                                                            <a href="https://www.facebook.com/argentinatophunts" target="_blank"><i class="fa-brands fa-facebook-f fa-2x"></i></a>
+                                                            <a href="https://www.instagram.com/argentinatophunts/" target="_blank"><i class="fa-brands fa-instagram fa-2x"></i></a>
+                                                        </div>
+
+                                                        <a href="https://www.argentinatophunts.com">www.argentinatophunts.com</a>
+                                                        <div class="redes">
+                                                            <a href="https://www.facebook.com/argentinatophunts" target="_blank"><i class="fa-brands fa-facebook-f fa-2x"></i></a>
+                                                            <a href="https://www.instagram.com/argentinatophunts/" target="_blank"><i class="fa-brands fa-instagram fa-2x"></i></a>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+
+                                    </div>
+
+                                </div>
+
+
+
                             </div>
 
-                            <a href="https://www.argentinatophunts.com">www.argentinatophunts.com</a>
-                            <div class="redes">
-                                <a href="https://www.facebook.com/argentinatophunts" target="_blank"><i class="fa-brands fa-facebook-f fa-2x"></i></a>
-                                <a href="https://www.instagram.com/argentinatophunts/" target="_blank"><i class="fa-brands fa-instagram fa-2x"></i></a>
-                            </div>
                         </div>
 
                     </div>
+
+
                 </div>
 
             </div>
@@ -1102,6 +1214,16 @@ shuffle($arrImagenes);
 
         </section>
         <!-- FIN CONTACTO -->
+
+        <div class="contact-feedback" id="contactFeedbackModal" role="dialog" aria-modal="true" aria-labelledby="contactFeedbackTitle" aria-describedby="contactFeedbackMessage" aria-hidden="true">
+            <div class="contact-feedback__panel">
+                <button type="button" class="contact-feedback__close" aria-label="Close">&times;</button>
+                <h2 id="contactFeedbackTitle"></h2>
+                <p id="contactFeedbackMessage"></p>
+                <ul id="contactFeedbackErrors"></ul>
+                <button type="button" class="contact-feedback__confirm">OK</button>
+            </div>
+        </div>
 
         <!-- CONTACTO -->
         <!--
@@ -1150,9 +1272,10 @@ shuffle($arrImagenes);
 
     <!-- ==Validate== -->
     <script src="assets/js/jquery.validate.js"></script>
+    <script src="assets/js/contact-form.js"></script>
 
     <!-- Custom -->
-    <script src="assets/js/scripts.js?v=22"></script>
+    <script src="assets/js/scripts.js?v=23"></script>
 
     <script>
         var pesActiva = 0;
@@ -1232,7 +1355,7 @@ shuffle($arrImagenes);
             $(".videocont1").width(tamanioHorizontalImagen).height(tamanioVerticalImagen);
 
             $("#imgdec3").width(tamanioHorizontalImagen).height(tamanioVerticalImagen);
-            $("#imgdec7").width(tamanioHorizontalImagen).height(tamanioVerticalImagen) ;
+            $("#imgdec7").width(tamanioHorizontalImagen).height(tamanioVerticalImagen);
 
 
         });

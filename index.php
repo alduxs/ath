@@ -132,7 +132,7 @@ shuffle($arrImagenes);
             position: absolute;
             top: 0;
             left: 0;
-            width: 220%;
+            width: 100%;
             height: auto;
             object-fit: cover;
         }
