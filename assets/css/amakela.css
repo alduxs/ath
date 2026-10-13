@@ -803,7 +803,7 @@ text-decoration: none;
 	background-image: url("../images/fondo-send.png");
 	border: 0px;
 	background-repeat: no-repeat;
-  	background-position: center;
+  	background-position: center -2px;
 }
 .formulario .contact-field-error{
 	display: block;

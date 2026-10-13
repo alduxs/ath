@@ -341,6 +341,44 @@ shuffle($arrImagenes);
                 </div>
             </div>
 
+            <!-- CONTACTO RESPONSIVE -->
+            <div class="container bloque-contact-us">
+                <div class="row">
+                    <div class="col-12">
+                        <h1>CONTACT US</h1>
+                    </div>
+                    <div class="col-xl-6 offset-xl-3">
+                        <div class="formulario">
+                            <form id="contactForm2" method="post" action="envio-contacto.php" novalidate>
+                                <div class="row">
+                                    <div class="col-12">
+                                        <input type="text" name="nombre" id="contactName" placeholder="Name" required maxlength="100">
+                                    </div>
+                                    <div class="col-12">
+                                        <input type="text" name="country" id="contactCountry" placeholder="Country" required maxlength="100">
+                                    </div>
+                                    <div class="col-12">
+                                        <input type="email" name="emailm" id="contactEmail" placeholder="Email" required maxlength="254">
+                                    </div>
+                                    <div class="col-12">
+                                        <input type="tel" name="phonenumber" id="contactPhone" placeholder="Phone Number" required maxlength="25">
+                                    </div>
+                                    <div class="col-12">
+                                        <textarea name="mensaje" id="contactMessage" cols="30" rows="5" placeholder="Message" required maxlength="5000"></textarea>
+                                    </div>
+                                    <div class="col-12 text-end mt-2">
+                                        <button type="submit" class="send">SEND</button>
+                                    </div>
+
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- FIN CONTACTO RESPONSIVE -->
+
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-lg-6 p-0 heigth100">

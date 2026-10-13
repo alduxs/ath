@@ -1519,7 +1519,7 @@ h2{
 	background-image: url("../images/fondo-send.png");
 	border: 0px;
 	background-repeat: no-repeat;
-  	background-position: center;
+  	background-position: center -2px;
 }
 .formulario .contact-field-error{
 	display: block;
@@ -1590,7 +1590,10 @@ h2{
 	cursor: pointer;
 }
 
-
+.bloque-contact-us{
+	display: block;
+	margin-bottom: 60px;
+}
 @media (min-width: 480px) {
 	.top .logo{
 		width: 130px;
@@ -2091,6 +2094,9 @@ h2{
 	}
 	.formulario{
 		margin-top: 0px;
+	}
+	.bloque-contact-us{
+		display: none;
 	}
 }
 @media (min-width: 1200px) {
