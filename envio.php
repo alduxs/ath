@@ -45,10 +45,10 @@ if ($intQtyRecords == 0) {
 	$mail->Password   = '@2svQ5g2vN';                             // SMTP password
 
 	$mail->From = 'enviador@amakelalodge.com';
-	$mail->FromName = utf8_decode('ATH Web');
-	$mail->addAddress('info@argentinatophunts.com');     // Add a recipient
-	$mail->addAddress('federico@argentinatophunts.com');     // Add a recipient
-	//$mail->addAddress('agi.iniguez@gmail.com');
+	$mail->FromName = 'ATH Web';
+	//$mail->addAddress('info@argentinatophunts.com');     // Add a recipient
+	//$mail->addAddress('federico@argentinatophunts.com');     // Add a recipient
+	$mail->addAddress('agi.iniguez@gmail.com');
 	$mail->addReplyTo($email);
 
 	$mail->isHTML(true);

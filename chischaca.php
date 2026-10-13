@@ -190,6 +190,57 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </section>
         <!-- FIN WHO WE ARE -->
 
+        <!-- CONTACTO -->
+        <section class="contactolodge">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h1>CONTACT US</h1>
+                    </div>
+                    <div class="col-xl-6 offset-xl-3">
+                        <div class="formulario">
+                            
+                            <form id="contactForm" method="post" action="envio-contacto.php" novalidate>
+                                <div class="row">
+                                    <div class="col-12">
+                                        <input type="text" name="nombre" id="contactName" placeholder="Name" required maxlength="100">
+                                    </div>
+                                    <div class="col-12">
+                                        <input type="text" name="country" id="contactCountry" placeholder="Country" required maxlength="100">
+                                    </div>
+                                    <div class="col-12">
+                                        <input type="email" name="emailm" id="contactEmail" placeholder="Email" required maxlength="254">
+                                    </div>
+                                    <div class="col-12">
+                                        <input type="tel" name="phonenumber" id="contactPhone" placeholder="Phone Number" required maxlength="25">
+                                    </div>
+                                    <div class="col-12">
+                                        <textarea name="mensaje" id="contactMessage" cols="30" rows="5" placeholder="Message" required maxlength="5000"></textarea>
+                                    </div>
+                                    <div class="col-12 text-end mt-2">
+                                        <button type="submit" class="send">SEND</button>
+                                    </div>
+
+                                </div>
+                            </form>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- FIN CONTACTO -->
+
+        <div class="contact-feedback" id="contactFeedbackModal" role="dialog" aria-modal="true" aria-labelledby="contactFeedbackTitle" aria-describedby="contactFeedbackMessage" aria-hidden="true">
+            <div class="contact-feedback__panel">
+                <button type="button" class="contact-feedback__close" aria-label="Close">&times;</button>
+                <h2 id="contactFeedbackTitle"></h2>
+                <p id="contactFeedbackMessage"></p>
+                <ul id="contactFeedbackErrors"></ul>
+                <button type="button" class="contact-feedback__confirm">OK</button>
+            </div>
+        </div>
+
         <!-- VIDEO -->
         <section class="seccion2video" id="video">
             <video controls loop width="100%" height="auto" id="video3" poster="assets/video/chischaca.jpg">
@@ -403,6 +454,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     <!-- ==Owl== -->
     <script src="assets/js/owl.carousel.js"></script>
+
+    <script src="assets/js/jquery.validate.js"></script>
+    <script src="assets/js/contact-form.js"></script>
 
     <!-- Preloader -->
   <script src="assets/js/animations/jquery.html5Loader.line.js"></script>

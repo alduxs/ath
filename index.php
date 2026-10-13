@@ -999,7 +999,7 @@ shuffle($arrImagenes);
                             </div>
 
                             <div class="bloque">
-                                <p><strong>If you’re a charity or nonprofit looking for silent auction ideas or you want more information about the program please contact us! info@argentinatophunts.com</astrong>
+                                <p><strong>If you’re a charity or nonprofit looking for silent auction ideas or you want more information about the program please contact us! info@argentinatophunts.com</strong>
                                 </p>
                             </div>
 
